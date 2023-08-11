@@ -8,10 +8,10 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/foxwo/OneDrive/Documentos/infrah/projeto_riscv
+Z0 dC:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1691542387
+Z2 !s110 1691732514
 !i10b 1
 !s100 QIac6HObCMm5X?]1FgE4l1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1691542387.000000
+Z7 !s108 1691732514.000000
 !s107 tb_top.sv|RISC_V.sv|Datapath.sv|instructionmemory.sv|datamemory.sv|mux4.sv|mux2.sv|imm_Gen.sv|HazardDetection.sv|ForwardingUnit.sv|flopr.sv|Controller.sv|BranchUnit.sv|ALUController.sv|alu.sv|RegFile.sv|RegPack.sv|Memoria32Data.sv|Memoria32.sv|ramOnChipData.v|ramOnChip32.v|adder.sv|
 Z8 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -37,17 +37,17 @@ valu
 R1
 R2
 !i10b 1
-!s100 @;bL3`CXkj7U=EJIa^ZUf1
+!s100 Nalm@4nUaY];mJH;fHDD[1
 R3
-IX;SgW7c6?zfOULb38nfJC2
+IboP=e6S7RlfNRkI?:1D`71
 R4
 S1
 R0
-w1691529179
+w1691717328
 8alu.sv
 Falu.sv
 !i122 0
-L0 3 32
+L0 3 37
 R6
 r1
 !s85 0
@@ -61,17 +61,17 @@ vALUController
 R1
 R2
 !i10b 1
-!s100 9>[j`K]Qd[aL8b?HZm<zQ0
+!s100 bJ=[7zlNgcGkY5[o2M6=?1
 R3
-IYQYjFJbU]NA[_@@7aLiKl3
+IUVjb;UAK^S7SSj1GaMiYU3
 R4
 S1
 R0
-w1691529155
+w1691725834
 8ALUController.sv
 FALUController.sv
 !i122 0
-L0 30 29
+L0 3 27
 R6
 r1
 !s85 0
