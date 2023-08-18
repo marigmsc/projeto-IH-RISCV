@@ -1,6 +1,1 @@
-lw x4,1(x0)
-xor x5,x5,x5
-add x4,x4,x4
-srli x5,x4,2
-xor x6,x6,x6
-slti x6,x5,3
+lbu x4,1(x0)
