@@ -19,16 +19,17 @@ module Controller (
     output logic Branch  //0: branch is not taken; 1: branch is taken
 );
 
-  logic [6:0] R_TYPE, LW, SW, BR;
+  logic [6:0] R_TYPE, LW, SW, BR, SRAI;
 
   assign R_TYPE = 7'b0110011;  //add,and
   assign LW = 7'b0000011;  //lw
   assign SW = 7'b0100011;  //sw
   assign BR = 7'b1100011;  //beq
+  assign SRAI = 7'b0010011; // SRAI
 
-  assign ALUSrc = (Opcode == LW || Opcode == SW);
+  assign ALUSrc = (Opcode == LW || Opcode == SW || Opcode == SRAI);
   assign MemtoReg = (Opcode == LW);
-  assign RegWrite = (Opcode == R_TYPE || Opcode == LW);
+  assign RegWrite = (Opcode == R_TYPE || Opcode == LW || Opcode == SRAI);
   assign MemRead = (Opcode == LW);
   assign MemWrite = (Opcode == SW);
   assign ALUOp[0] = (Opcode == BR);

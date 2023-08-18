@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1691874316
+Z2 !s110 1692319819
 !i10b 1
 !s100 QIac6HObCMm5X?]1FgE4l1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1691874316.000000
+Z7 !s108 1692319819.000000
 !s107 tb_top.sv|RISC_V.sv|Datapath.sv|instructionmemory.sv|datamemory.sv|mux4.sv|mux2.sv|imm_Gen.sv|HazardDetection.sv|ForwardingUnit.sv|flopr.sv|Controller.sv|BranchUnit.sv|ALUController.sv|alu.sv|RegFile.sv|RegPack.sv|Memoria32Data.sv|Memoria32.sv|ramOnChipData.v|ramOnChip32.v|adder.sv|
 Z8 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -37,13 +37,13 @@ valu
 R1
 R2
 !i10b 1
-!s100 mVeoD=iiP>RzZ@X[6KTa<0
+!s100 @]559Ql?L:Y[Dzdkni75;0
 R3
-IaYe5`9HYidoQZaY:6OOBM0
+ICS_7hjn:?^KF]I?J=A0C:2
 R4
 S1
 R0
-w1691874203
+w1692319669
 8alu.sv
 Falu.sv
 !i122 0
@@ -111,17 +111,17 @@ vController
 R1
 R2
 !i10b 1
-!s100 ?KIF6:YX6JV;Vmm;TP`D41
+!s100 FXe]l90]Wd<z9LTF^B_Li3
 R3
-I4ZR<jZVEF:eXnZRNli3;l3
+I?ZlRZVf7OC8S[L_CkWTca0
 R4
 S1
 R0
-R5
+w1692319053
 8Controller.sv
 FController.sv
 !i122 0
-Z11 L0 3 35
+L0 3 36
 R6
 r1
 !s85 0
@@ -158,7 +158,7 @@ R8
 R9
 vDatapath
 R1
-Z12 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 Fn1=06T>mFGgNaz;YGn[M2
+Z11 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 Fn1=06T>mFGgNaz;YGn[M2
 DXx4 work 16 Datapath_sv_unit 0 22 dZ0WB6@nX2MiW1[;ndk7M0
 R2
 R4
@@ -171,8 +171,8 @@ IMEhI`hX_29kCTm7d`>JHj3
 S1
 R0
 R5
-Z13 8Datapath.sv
-Z14 FDatapath.sv
+Z12 8Datapath.sv
+Z13 FDatapath.sv
 !i122 0
 L0 5 312
 R6
@@ -185,7 +185,7 @@ R9
 n@datapath
 XDatapath_sv_unit
 R1
-R12
+R11
 R2
 VdZ0WB6@nX2MiW1[;ndk7M0
 r1
@@ -197,8 +197,8 @@ IdZ0WB6@nX2MiW1[;ndk7M0
 S1
 R0
 R5
+R12
 R13
-R14
 !i122 0
 L0 3 0
 R6
@@ -287,17 +287,17 @@ vimm_Gen
 R1
 R2
 !i10b 1
-!s100 cP:U9UCz::O[GG]YhKW1i2
+!s100 ?OT:YCdIQmhQD[X``Yj3g2
 R3
-IH5fJRm[?fW?WjlG6enAi@2
+I5Q;NbQZk^_4o3Qg??^KPB3
 R4
 S1
 R0
-R5
+w1692319512
 8imm_Gen.sv
 Fimm_Gen.sv
 !i122 0
-L0 3 29
+L0 3 32
 R6
 r1
 !s85 0
@@ -346,7 +346,7 @@ R5
 8Memoria32.sv
 FMemoria32.sv
 !i122 0
-Z15 L0 26 94
+Z14 L0 26 94
 R6
 r1
 !s85 0
@@ -371,7 +371,7 @@ R5
 8Memoria32Data.sv
 FMemoria32Data.sv
 !i122 0
-R15
+R14
 R6
 r1
 !s85 0
@@ -467,7 +467,7 @@ R5
 8ramOnChip32.v
 FramOnChip32.v
 !i122 0
-Z16 L0 40 78
+Z15 L0 40 78
 R6
 r1
 !s85 0
@@ -490,7 +490,7 @@ R5
 8ramOnChipData.v
 FramOnChipData.v
 !i122 0
-R16
+R15
 R6
 r1
 !s85 0
@@ -515,7 +515,7 @@ R5
 8RegFile.sv
 FRegFile.sv
 !i122 0
-R11
+L0 3 35
 R6
 r1
 !s85 0
