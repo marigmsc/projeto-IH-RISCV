@@ -25,7 +25,8 @@ module Controller (
   assign LW = 7'b0000011;  //lw
   assign SW = 7'b0100011;  //sw
   assign BR = 7'b1100011;  //beq
-  assign SRAI = 7'b0010011; // SRAI, SLLI
+  assign SRAI = 7'b0010011; // SRAI, SLLI,SLTI
+  
 
   assign ALUSrc = (Opcode == LW || Opcode == SW || Opcode == SRAI);
   assign MemtoReg = (Opcode == LW);
