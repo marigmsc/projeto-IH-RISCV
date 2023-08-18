@@ -32,9 +32,9 @@ Seu objetivo é implementar as instruções restantes listadas abaixo:
 | 10 | `SH`      |      ❌     |    ❌    |      ❌      |
 | 11 | `SLTI`    |      ❌     |    ❌    |      ❌      |
 | 12 | `ADDI`    |      ❌     |    ❌    |      ❌      |
-| 13 | `SLLI`    |      ✅     |    ❌    |      ❌      |
+| 13 | `SLLI`    |      ✅     |    ✅    |      ❌      |
 | 14 | `SRLI`    |      ❌     |    ❌    |      ❌      |
-| 15 | `SRAI`    |      ✅     |    ❌    |      ❌      |
+| 15 | `SRAI`    |      ✅     |    ✅    |      ❌      |
 | 16 | `SUB`     |      ❌     |    ❌    |      ❌      |
 | 17 | `SLT`     |      ✅     |    ✅    |      ❌      |
 | 18 | `XOR`     |      ✅     |    ✅    |      ❌      |
