@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1692319819
+Z2 !s110 1692320887
 !i10b 1
 !s100 QIac6HObCMm5X?]1FgE4l1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1692319819.000000
+Z7 !s108 1692320887.000000
 !s107 tb_top.sv|RISC_V.sv|Datapath.sv|instructionmemory.sv|datamemory.sv|mux4.sv|mux2.sv|imm_Gen.sv|HazardDetection.sv|ForwardingUnit.sv|flopr.sv|Controller.sv|BranchUnit.sv|ALUController.sv|alu.sv|RegFile.sv|RegPack.sv|Memoria32Data.sv|Memoria32.sv|ramOnChipData.v|ramOnChip32.v|adder.sv|
 Z8 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -37,13 +37,13 @@ valu
 R1
 R2
 !i10b 1
-!s100 @]559Ql?L:Y[Dzdkni75;0
+!s100 a=c:Whb::JXR2^6^@ggOg0
 R3
-ICS_7hjn:?^KF]I?J=A0C:2
+ILa?@6c2LPc];;Jb3c=BmT0
 R4
 S1
 R0
-w1692319669
+w1692320794
 8alu.sv
 Falu.sv
 !i122 0
@@ -61,13 +61,13 @@ vALUController
 R1
 R2
 !i10b 1
-!s100 M`88A1H6^OgKI3;m`11]A0
+!s100 NK6TW9kG1AB[mP9TGB=@l1
 R3
-IhXcc1Bg>Ro2QS^AlDF_ZE3
+ICNb>C?B;M3M34QK_XmOVC2
 R4
 S1
 R0
-w1691803332
+w1692320478
 8ALUController.sv
 FALUController.sv
 !i122 0
@@ -117,7 +117,7 @@ I?ZlRZVf7OC8S[L_CkWTca0
 R4
 S1
 R0
-w1692319053
+w1692319946
 8Controller.sv
 FController.sv
 !i122 0
