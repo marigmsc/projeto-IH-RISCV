@@ -32,6 +32,10 @@ module alu#(
             4'b0110:       // SLLI
                     ALUResult = SrcA << SrcB;
                 //     $display("Operation: %b, SrcA: %b, SrCB: %b", Operation, SrcA, SrcB);
+            4'b0101:
+                    ALUResult = SrcA | SrcB;
+            4'b0110:
+                    ALUResult = SrcA - SrcB;
             default:
                     ALUResult = 0;
             endcase
