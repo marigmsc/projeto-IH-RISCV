@@ -18,7 +18,7 @@ module imm_Gen (
         Imm_out = {inst_code[31] ? 20'hFFFFF : 20'b0, inst_code[24:20]};
 
       7'b0010011:
-        if(inst_code[14:12] == 3'b010) 
+        if((inst_code[14:12] == 3'b010) || (inst_code[14:12] == 3'b000))
           Imm_out = {inst_code[31] ? 20'hFFFFF : 20'b0, inst_code[31:20]};
         else 
           Imm_out = {inst_code[31] ? 20'hFFFFF : 20'b0, inst_code[24:20]};

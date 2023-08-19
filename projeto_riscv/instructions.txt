@@ -1,1 +1,3 @@
 lbu x4,1(x0)
+xor x5,x5,x5
+addi x5,x4,2

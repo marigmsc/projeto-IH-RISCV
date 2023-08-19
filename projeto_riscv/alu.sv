@@ -40,6 +40,9 @@ module alu#(
                     ALUResult = (SrcA < SrcB) ? 1 : 0;                     
             4'b1110:        // SRLI
                     ALUResult = SrcA >> SrcB;
+            4'b1011: 
+                    ALUResult = SrcA + SrcB; 
+                           // ADDI
             default:
                     ALUResult = 0;
             endcase
