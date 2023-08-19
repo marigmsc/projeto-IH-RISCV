@@ -18,6 +18,7 @@ module Datapath #(
     MemWrite,  // Register file or Immediate MUX // Memroy Writing Enable
     MemRead,  // Memroy Reading Enable
     Branch,  // Branch Enable
+    Jump,
     input  logic [          1:0] ALUOp,
     input  logic [ALU_CC_W -1:0] ALU_CC,         // ALU Control Code ( input of the ALU )
     output logic [          6:0] opcode,
@@ -141,6 +142,7 @@ module Datapath #(
       B.MemWrite <= 0;
       B.ALUOp <= 0;
       B.Branch <= 0;
+      B.Jump <= 0;
       B.Curr_Pc <= 0;
       B.RD_One <= 0;
       B.RD_Two <= 0;
@@ -159,6 +161,7 @@ module Datapath #(
       B.MemWrite <= MemWrite;
       B.ALUOp <= ALUOp;
       B.Branch <= Branch;
+      B.Jump <= Jump;
       B.Curr_Pc <= A.Curr_Pc;
       B.RD_One <= Reg1;
       B.RD_Two <= Reg2;
@@ -215,12 +218,14 @@ module Datapath #(
       FAmux_Result,
       SrcB,
       ALU_CC,
+      Old_PC_Four,
       ALUResult
   );
   BranchUnit #(9) brunit (
       B.Curr_Pc,
       B.ImmG,
       B.Branch,
+      B.Jump,
       ALUResult,
       BrImm,
       Old_PC_Four,

@@ -11,6 +11,7 @@ module alu#(
         input logic [DATA_WIDTH-1:0]    SrcB,
 
         input logic [OPCODE_LENGTH-1:0]    Operation,
+        input logic [31:0] Old_PC_Four,
         output logic[DATA_WIDTH-1:0] ALUResult
         );
     
@@ -34,15 +35,17 @@ module alu#(
                     ALUResult = SrcA >>> SrcB; 
             4'b1000:        // EQUAL
                     ALUResult = (SrcA == SrcB) ? 1 : 0;  
-            4'b1010:       // SUB
+            4'b1010:        // SUB
                     ALUResult = SrcA - SrcB; 
             4'b1100:        // SLT
                     ALUResult = (SrcA < SrcB) ? 1 : 0;                     
             4'b1110:        // SRLI
                     ALUResult = SrcA >> SrcB;
-            4'b1011: 
+            4'b1011:        // ADDI
                     ALUResult = SrcA + SrcB; 
-                           // ADDI
+            4'b1111:        // JALR
+                    ALUResult = Old_PC_Four;
+                           
             default:
                     ALUResult = 0;
             endcase

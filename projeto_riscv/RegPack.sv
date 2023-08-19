@@ -23,6 +23,7 @@ package Pipe_Buf_Reg_PKG;
     logic        MemWrite;
     logic [1:0]  ALUOp; //ALUController
     logic        Branch; //BranchUnit
+    logic        Jump;
     logic [8:0]  Curr_Pc; //BranchUnit
     logic [31:0] RD_One;
     logic [31:0] RD_Two;
