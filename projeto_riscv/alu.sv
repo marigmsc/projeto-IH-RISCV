@@ -11,13 +11,13 @@ module alu#(
         input logic [DATA_WIDTH-1:0]    SrcB,
 
         input logic [OPCODE_LENGTH-1:0]    Operation,
-        input logic [31:0] Old_PC_Four,
+        input logic [8:0] PcFour,
         output logic[DATA_WIDTH-1:0] ALUResult
         );
     
         always_comb // Lógica combinacional da ALU, onde poderiámos adicionar mais instruções R-type
         begin
-                $display("Operation: %b", Operation);
+                // $display("Operation: %b", PcFour);
             case(Operation)
             4'b0000:        // AND 
                     ALUResult = SrcA & SrcB;
@@ -43,8 +43,8 @@ module alu#(
                     ALUResult = SrcA >> SrcB;
             4'b1011:        // ADDI
                     ALUResult = SrcA + SrcB; 
-            4'b1111:        // JALR
-                    ALUResult = Old_PC_Four;
+            4'b0100:        // JALR
+                    ALUResult = PcFour;
                            
             default:
                     ALUResult = 0;

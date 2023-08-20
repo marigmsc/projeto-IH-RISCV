@@ -218,7 +218,7 @@ module Datapath #(
       FAmux_Result,
       SrcB,
       ALU_CC,
-      Old_PC_Four,
+      PCPlus4,
       ALUResult
   );
   BranchUnit #(9) brunit (

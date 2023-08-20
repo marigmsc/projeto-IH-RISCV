@@ -1,3 +1,2 @@
-lw x4,1(x0)
-addi x4,x4,2
-jalr x6,x0,-3
+jalr x1,x0,3
+beq x0,x0,x1

@@ -20,7 +20,7 @@ module Controller (
     output logic Jump
 );
 
-  logic [6:0] R_TYPE, LW, SW, BR, SRAI;
+  logic [6:0] R_TYPE, LW, SW, BR, SRAI, JALR;
 
   assign R_TYPE = 7'b0110011;  //add,and
   assign LW = 7'b0000011;  //lw
@@ -29,7 +29,7 @@ module Controller (
   assign SRAI = 7'b0010011; // SRAI, SLLI,SLTI, ADDI
   assign JALR = 7'b1100111; // JALR
   
-
+  
   assign ALUSrc = (Opcode == LW || Opcode == SW || Opcode == SRAI);
   assign MemtoReg = (Opcode == LW);
   assign RegWrite = (Opcode == R_TYPE || Opcode == LW || Opcode == SRAI || Opcode == JALR);
