@@ -61,8 +61,7 @@ module datamemory #(
           Datain <= wd[7:0];
         end
         3'b001: begin //SH
-          $display("entrei");
-          Wr <= 4'b1111;
+          Wr <= 4'b0110;
           Datain <= wd[15:0];
         end
         default: begin
