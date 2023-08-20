@@ -8,6 +8,7 @@
     alu.sv
     ALUController.sv
     BranchUnit.sv
+    JumpUnit.sv
     Controller.sv
     flopr.sv
     ForwardingUnit.sv
