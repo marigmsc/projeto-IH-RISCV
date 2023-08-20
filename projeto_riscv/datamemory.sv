@@ -39,10 +39,13 @@ module datamemory #(
         3'b010:  //LW
           rd <= Dataout;
         
-        3'b000:
+        3'b000: //LB
           rd <= Dataout[7:0];
         
-        3'b100:
+        3'b001: //LH
+          rd <= Dataout[15:0];
+        
+        3'b100: //LBU
           rd <= Dataout[7:0];
 
         default: rd <= Dataout;
@@ -53,11 +56,11 @@ module datamemory #(
           Wr <= 4'b1111;
           Datain <= wd;
         end
-        3'b000: begin
+        3'b000: begin //SB
           Wr <= 4'b1111;
           Datain <= wd[7:0];
         end
-        3'b001: begin
+        3'b001: begin //SH
           $display("entrei");
           Wr <= 4'b1111;
           Datain <= wd[15:0];
