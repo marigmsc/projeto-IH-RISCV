@@ -55,12 +55,12 @@ module datamemory #(
         end
 
         3'b001: begin
-          Wr <= 4'b0110;
+          Wr <= 4'b0110; //SH
           Datain <= wd[15:0];
         end
 
         default: begin
-          Wr <= 4'b1111;
+          Wr <= 4'b1111; //SB
           Datain <= wd;
         end
       endcase
