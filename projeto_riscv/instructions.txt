@@ -1,2 +1,2 @@
-jalr x1,x0,3
-beq x0,x0,x1
+lb x4,0(x0)
+sb x3,0(x0)

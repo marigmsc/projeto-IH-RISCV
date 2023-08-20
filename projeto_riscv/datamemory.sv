@@ -53,6 +53,15 @@ module datamemory #(
           Wr <= 4'b1111;
           Datain <= wd;
         end
+        3'b000: begin
+          Wr <= 4'b1111;
+          Datain <= wd[7:0];
+        end
+        3'b001: begin
+          $display("entrei");
+          Wr <= 4'b1111;
+          Datain <= wd[15:0];
+        end
         default: begin
           Wr <= 4'b1111;
           Datain <= wd;

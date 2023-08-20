@@ -40,7 +40,7 @@ module tb_top;
 
     #(CLKPERIOD * 50);
 
-    // $stop;
+     $stop;
   end
 
   always_comb begin : MEMORY
