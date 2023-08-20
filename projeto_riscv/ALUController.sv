@@ -9,7 +9,7 @@ module ALUController (
     //Output
     output logic [3:0] Operation  // operation selection for ALU
 );
-
+// add opcode(shift , loads and stores(word,half/word)) to make it work 
   assign Operation[0] = ((ALUOp == 2'b01) && (Funct3 == 3'b101)) ||
       ((ALUOp == 2'b01) && (Funct3 == 3'b100)) ||
       ((ALUOp == 2'b10) && (Funct3 == 3'b110)) ||  // OR
@@ -23,15 +23,15 @@ module ALUController (
       ((ALUOp == 2'b01) && (Funct3 == 3'b101)) ||
       ((ALUOp == 2'b10) && (Funct3 == 3'b000)) ||  // R\I-add or SUB
       ((ALUOp == 2'b00) && (Funct3 == 3'b101) && (Funct7 == 7'b0100000)) ||
-      ((ALUOp == 2'b00) && (Funct3 == 3'b010));
+      ((ALUOp == 2'b00) && (Funct3 == 3'b010)); // SW/LW !!
 
   assign Operation[2] = ((ALUOp == 2'b01) && (Funct3 == 3'b001)) ||
       ((ALUOp == 2'b01) && (Funct3 == 3'b101)) ||
       ((ALUOp == 2'b01) && (Funct3 == 3'b100)) ||
       ((ALUOp==2'b10) && (Funct3==3'b101) && (Funct7==7'b0000000)) || // R\I->>
       ((ALUOp == 2'b00) && (Funct3 == 3'b101) && (Funct7 == 7'b0100000)) ||  // R\I->>>
-      ((ALUOp == 2'b00) && (Funct3 == 3'b001)) ||  // R\I-<<
-      ((ALUOp == 2'b10) && (Funct3 == 3'b010)) ||  // SLTI
+      ((ALUOp == 2'b00) && (Funct3 == 3'b001)) ||  // SLLI !!
+      ((ALUOp == 2'b10) && (Funct3 == 3'b010)) || 
       ((ALUOp == 2'b10) && (Funct3 == 3'b110)) ||  //OR
       ((ALUOp == 2'b00) && (Funct3 == 3'b101) && (Funct7 == 7'b0000000)); //SLI
 
@@ -39,7 +39,7 @@ module ALUController (
       ((ALUOp == 2'b01) && (Funct3 == 3'b000)) ||  // BEQ
       ((ALUOp == 2'b10) && (Funct3 == 3'b010)) || //SLT
       ((ALUOp == 2'b10) && (Funct3 == 3'b000) && (Funct7 == 7'b0100000)) || //SUB
-      ((ALUOp == 2'b00) && (Funct3 == 3'b101) && (Funct7 == 7'b0000000)) ||  // SLLI
+      ((ALUOp == 2'b00) && (Funct3 == 3'b101) && (Funct7 == 7'b0000000)) ||  // SLLI !!
       ((ALUOp == 2'b00) && (Funct3 == 3'b000));  // ADDI; 
 
 // always_comb begin

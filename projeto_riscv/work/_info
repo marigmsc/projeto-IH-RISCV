@@ -8,10 +8,10 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv
+Z0 dC:/Users/maria/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1692553433
+Z2 !s110 1692566757
 !i10b 1
 !s100 QIac6HObCMm5X?]1FgE4l1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,7 +19,7 @@ IZE^I<9U69QeTQ5dOY^H1^1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1691517437
+Z5 w1692321857
 8adder.sv
 Fadder.sv
 !i122 0
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1692553433.000000
+Z7 !s108 1692566757.000000
 !s107 tb_top.sv|RISC_V.sv|Datapath.sv|instructionmemory.sv|datamemory.sv|mux4.sv|mux2.sv|imm_Gen.sv|HazardDetection.sv|ForwardingUnit.sv|flopr.sv|Controller.sv|BranchUnit.sv|ALUController.sv|alu.sv|RegFile.sv|RegPack.sv|Memoria32Data.sv|Memoria32.sv|ramOnChipData.v|ramOnChip32.v|adder.sv|
 Z8 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -37,13 +37,13 @@ valu
 R1
 R2
 !i10b 1
-!s100 cc:3?9laVT_Y5G8B>P00[2
+!s100 EzgIKm>@=J4WjcNZF9?<l2
 R3
-I@@GX4c_ln7amY?NlC1g^21
+ILFeci@`RNfe:Yk:A:clOE1
 R4
 S1
 R0
-w1692552053
+w1692562489
 8alu.sv
 Falu.sv
 !i122 0
@@ -67,7 +67,7 @@ I47GR3c^Yf6ngo_VfYX7IP3
 R4
 S1
 R0
-w1692552156
+w1692562258
 8ALUController.sv
 FALUController.sv
 !i122 0
@@ -92,7 +92,7 @@ IB:gC]ime;mRm`4JS[@dem0
 R4
 S1
 R0
-Z11 w1692550689
+Z11 w1692562174
 8BranchUnit.sv
 FBranchUnit.sv
 !i122 0
@@ -142,7 +142,7 @@ IYOSamH9R5S<JgZOQEojo@1
 R4
 S1
 R0
-w1692553365
+w1692562356
 8datamemory.sv
 Fdatamemory.sv
 !i122 0
@@ -293,7 +293,7 @@ IB`U=fXo3XL_:]eYS4O2l01
 R4
 S1
 R0
-R11
+w1692562532
 8imm_Gen.sv
 Fimm_Gen.sv
 !i122 0
@@ -560,7 +560,7 @@ I`ZC>alZ:L3UZEf:2h:31f0
 R4
 S1
 R0
-w1692513615
+R11
 8tb_top.sv
 Ftb_top.sv
 !i122 0
