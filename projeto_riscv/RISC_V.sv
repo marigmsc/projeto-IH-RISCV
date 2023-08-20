@@ -41,6 +41,7 @@ module riscv #(
       ALUop_Reg,
       Funct7,
       Funct3,
+      opcode,
       Operation
   );
 
