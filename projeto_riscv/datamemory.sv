@@ -40,10 +40,10 @@ module datamemory #(
           rd <= Dataout;
         
         3'b000:
-          rd <= Dataout[7:0];
+          rd <= Dataout[7:0]; // LB
         
         3'b100:
-          rd <= Dataout[7:0];
+          rd <= Dataout[7:0]; // LBU
 
         default: rd <= Dataout;
       endcase
@@ -53,6 +53,12 @@ module datamemory #(
           Wr <= 4'b1111;
           Datain <= wd;
         end
+
+        3'b001: begin
+          Wr <= 4'b0110;
+          Datain <= wd[15:0];
+        end
+
         default: begin
           Wr <= 4'b1111;
           Datain <= wd;
