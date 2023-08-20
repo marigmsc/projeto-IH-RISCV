@@ -28,8 +28,10 @@ module alu#(
                     ALUResult = (SrcA < SrcB) ? 1 : 0;
             4'b0100:        // BNE
                     ALUResult = (SrcA != SrcB) ? 1 : 0;
-            4'b0101:       //  OR
+            4'b0101:begin      //  OR
                     ALUResult = SrcA | SrcB;
+                    $display("Entrou");
+            end
             4'b0110:       // SLLI
                     ALUResult = SrcA << SrcB;
             4'b0111:       // SRAI

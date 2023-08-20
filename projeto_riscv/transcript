@@ -1,7 +1,7 @@
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:18:40 on Aug 20,2023
+# Start time: 19:10:21 on Aug 20,2023
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -11,6 +11,7 @@ do runtb_top
 # -- Compiling package Pipe_Buf_Reg_PKG
 # -- Compiling module RegFile
 # -- Compiling module alu
+# ** Error: (vlog-13069) alu.sv(33): near ";": syntax error, unexpected ';', expecting ':'.
 # -- Compiling module ALUController
 # -- Compiling module BranchUnit
 # -- Compiling module Controller
@@ -22,69 +23,7 @@ do runtb_top
 # -- Compiling module mux4
 # -- Compiling module datamemory
 # -- Compiling module instructionmemory
-# ** Error: (vlog-13069) Datapath.sv(250): near "always": syntax error, unexpected always, expecting ';' or ','.
-# ** Error: (vlog-13069) Datapath.sv(254): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(255): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(256): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(257): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(258): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(259): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(260): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(261): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(262): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(263): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(264): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(267): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(268): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(269): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(270): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(271): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(272): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(273): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(274): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(275): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(276): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(277): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) Datapath.sv(278): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) RISC_V.sv(60): near "ALUop": syntax error, unexpected IDENTIFIER, expecting ')'.
-# End time: 17:18:40 on Aug 20,2023, Elapsed time: 0:00:00
-# Errors: 25, Warnings: 0
-# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runtb_top line 4
-# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -f compile_verilog"
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:19:51 on Aug 20,2023
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# ** Error: (vlog-13069) RISC_V.sv(60): near "ALUop": syntax error, unexpected IDENTIFIER, expecting ')'.
-# -- Compiling module tb_top
-# End time: 17:19:51 on Aug 20,2023, Elapsed time: 0:00:00
+# End time: 19:10:22 on Aug 20,2023, Elapsed time: 0:00:01
 # Errors: 1, Warnings: 0
 # ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
 # Error in macro ./runtb_top line 4
@@ -94,7 +33,7 @@ do runtb_top
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:20:09 on Aug 20,2023
+# Start time: 19:11:15 on Aug 20,2023
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -123,243 +62,10 @@ do runtb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 17:20:10 on Aug 20,2023, Elapsed time: 0:00:01
+# End time: 19:11:15 on Aug 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 17:20:10 on Aug 20,2023
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# ** Error: (vsim-3033) Instantiation of 'JumpUnit' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp File: Datapath.sv Line: 238
-#         Searched libraries:
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_mf
-#             C:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv/work
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runtb_top PAUSED at line 5
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:21:48 on Aug 20,2023
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module JumpUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 17:21:49 on Aug 20,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 17:20:10 on Aug 20,2023
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.JumpUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'jpunit'.  Expected 9, found 8.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jpunit File: Datapath.sv Line: 238
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'Reg2'. The port definition is at: JumpUnit.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jpunit File: Datapath.sv Line: 238
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'CurrFlag'. The port definition is at: JumpUnit.sv(10).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jpunit File: Datapath.sv Line: 238
-# ** Error (suppressible): (vsim-3839) Variable '/tb_top/riscV/dp/Old_PC_Four', driven via a port connection, is multiply driven. See Datapath.sv(227).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jpunit File: Datapath.sv Line: 238
-# ** Error (suppressible): (vsim-3839) Variable '/tb_top/riscV/dp/BrPC', driven via a port connection, is multiply driven. See Datapath.sv(227).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jpunit File: Datapath.sv Line: 238
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'BrPC'. The port definition is at: JumpUnit.sv(13).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jpunit File: Datapath.sv Line: 238
-# ** Error (suppressible): (vsim-3839) Variable '/tb_top/riscV/dp/PcSel', driven via a port connection, is multiply driven. See Datapath.sv(227).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jpunit File: Datapath.sv Line: 238
-# ** Warning: (vsim-3722) Datapath.sv(238): [TFMPC] - Missing connection for port 'PcSel'.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runtb_top PAUSED at line 5
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:22:44 on Aug 20,2023
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module JumpUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 17:22:44 on Aug 20,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 17:20:10 on Aug 20,2023
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.JumpUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Error (suppressible): (vsim-3839) Variable '/tb_top/riscV/dp/BrImm', driven via a port connection, is multiply driven. See Datapath.sv(227).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jpunit File: Datapath.sv Line: 238
-# ** Error (suppressible): (vsim-3839) Variable '/tb_top/riscV/dp/Old_PC_Four', driven via a port connection, is multiply driven. See Datapath.sv(227).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jpunit File: Datapath.sv Line: 238
-# ** Error (suppressible): (vsim-3839) Variable '/tb_top/riscV/dp/BrPC', driven via a port connection, is multiply driven. See Datapath.sv(227).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jpunit File: Datapath.sv Line: 238
-# ** Error (suppressible): (vsim-3839) Variable '/tb_top/riscV/dp/PcSel', driven via a port connection, is multiply driven. See Datapath.sv(227).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jpunit File: Datapath.sv Line: 238
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runtb_top PAUSED at line 5
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:55:15 on Aug 20,2023
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 18:55:15 on Aug 20,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 17:20:10 on Aug 20,2023
+# Start time: 19:11:16 on Aug 20,2023
 # Loading sv_std.std
 # Loading work.tb_top
 # Loading work.riscv
@@ -390,9 +96,9 @@ do runtb_top
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlftyvk3r0".
+#           Attempting to use alternate WLF file "./wlft09aihf".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftyvk3r0
+#           Using alternate file: ./wlft09aihf
 # hexadecimal
 # unsigned
 # hexadecimal
@@ -417,123 +123,27 @@ do runtb_top
 # Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
 # Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
 # Operation: xxxx
-# &b  x
-# &b  0
 # Operation: 1011
-# &b 35
-# &b  0
-# Operation: 0011
 # Operation: 1011
-#                   35: Memory [  1] written with value: [00000000] | [         0]
+# Operation: 1011
+#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
 # 
-# ** Note: $stop    : tb_top.sv(43)
-#    Time: 510 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at tb_top.sv line 43
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Error 31: Unable to unlink file "C:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv/work/_lib.qdb".
-# Error 133: Unable to remove directory "C:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv/work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:55:41 on Aug 20,2023
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
+#                   35: Memory [  1] read with value: [00000001] | [         1]
 # 
-# Top level modules:
-# 	tb_top
-# End time: 18:55:42 on Aug 20,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 18:55:43 on Aug 20,2023, Elapsed time: 1:35:33
-# Errors: 8, Warnings: 8
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 18:55:43 on Aug 20,2023
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlft004jvt".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft004jvt
-# hexadecimal
-# unsigned
-# hexadecimal
-# unsigned
-# unsigned
-# unsigned
-# hexadecimal
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Operation: xxxx
-# xxxxxxx
-# 0000000
+#                   40: Memory [  1] read with value: [00000004] | [         4]
+# 
+# Operation: 0000
+#                   45: Register [ 4] written with value: [00000004] | [         4]
+# 
 # Operation: 1011
-# 0100011
-# 0000000
-# Operation: 0011
+# Operation: 0101
+# Entrou
+#                   65: Register [ 5] written with value: [00000000] | [         0]
+# 
 # Operation: 1011
-#                   35: Memory [  1] written with value: [00000000] | [         0]
+#                   75: Register [ 5] written with value: [00000005] | [         5]
+# 
+#                   85: Register [ 6] written with value: [00000005] | [         5]
 # 
 # ** Note: $stop    : tb_top.sv(43)
 #    Time: 510 ns  Iteration: 0  Instance: /tb_top
