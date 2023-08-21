@@ -35,6 +35,6 @@ module Controller (
   assign MemWrite = (Opcode == SW);
   assign ALUOp[0] = (Opcode == BR);
   assign ALUOp[1] = (Opcode == R_TYPE);
-  assign ALUOp[2] = 0;
+  assign ALUOp[2] = (Opcode == LW || Opcode == SW);
   assign Branch = (Opcode == BR);
 endmodule
