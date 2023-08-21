@@ -19,12 +19,8 @@ module Datapath #(
     MemRead,  // Memroy Reading Enable
     Branch,  // Branch Enable
     Jump,
-<<<<<<< Updated upstream
-    input  logic [          1:0] ALUOp,
-=======
     CurrFlag,
     input  logic [          2:0] ALUOp,
->>>>>>> Stashed changes
     input  logic [ALU_CC_W -1:0] ALU_CC,         // ALU Control Code ( input of the ALU )
     output logic [          6:0] opcode,
     output logic [          6:0] Funct7,
@@ -148,10 +144,7 @@ module Datapath #(
       B.ALUOp <= 0;
       B.Branch <= 0;
       B.Jump <= 0;
-<<<<<<< Updated upstream
-=======
       B.CurrFlag <= 0;
->>>>>>> Stashed changes
       B.Curr_Pc <= 0;
       B.RD_One <= 0;
       B.RD_Two <= 0;
@@ -171,10 +164,7 @@ module Datapath #(
       B.ALUOp <= ALUOp;
       B.Branch <= Branch;
       B.Jump <= Jump;
-<<<<<<< Updated upstream
-=======
       B.CurrFlag <= CurrFlag;
->>>>>>> Stashed changes
       B.Curr_Pc <= A.Curr_Pc;
       B.RD_One <= Reg1;
       B.RD_Two <= Reg2;
@@ -232,7 +222,6 @@ module Datapath #(
       FAmux_Result,
       SrcB,
       ALU_CC,
-      PCPlus4,
       ALUResult
   );
   BranchUnit #(9) brunit (
@@ -240,10 +229,7 @@ module Datapath #(
       B.ImmG,
       B.Branch,
       B.Jump,
-<<<<<<< Updated upstream
-=======
       B.CurrFlag,
->>>>>>> Stashed changes
       ALUResult,
       SrcB,
       BrImm,

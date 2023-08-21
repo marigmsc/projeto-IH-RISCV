@@ -11,30 +11,24 @@ module alu#(
         input logic [DATA_WIDTH-1:0]    SrcB,
 
         input logic [OPCODE_LENGTH-1:0]    Operation,
-        input logic [8:0] PcFour,
         output logic[DATA_WIDTH-1:0] ALUResult
         );
     
         always_comb // Lógica combinacional da ALU, onde poderiámos adicionar mais instruções R-type
         begin
-                // $display("Operation: %b", PcFour);
+                $display("Operation: %b", Operation);
             case(Operation)
             4'b0000:        // AND 
                     ALUResult = SrcA & SrcB;
             4'b0001:        // XOR 
                     ALUResult = (SrcA ^ SrcB);
-            4'b0010:       // ADD 
+            4'b0010:        // ADD 
                     ALUResult = SrcA + SrcB;
-                    
             4'b0011:        //SLTI 
                     ALUResult = (SrcA < SrcB) ? 1 : 0;
-<<<<<<< Updated upstream
-            4'b0101:       //  OR
-=======
             4'b0100:        // BNE
                     ALUResult = (SrcA != SrcB) ? 1 : 0;
             4'b0101:     //  OR
->>>>>>> Stashed changes
                     ALUResult = SrcA | SrcB;
             4'b0110:       // SLLI
                     ALUResult = SrcA << SrcB;
@@ -42,20 +36,25 @@ module alu#(
                     ALUResult = SrcA >>> SrcB; 
             4'b1000:        // EQUAL
                     ALUResult = (SrcA == SrcB) ? 1 : 0;  
-            4'b1010:        // SUB
+            4'b1001:begin  //LUI
+                    ALUResult = SrcB;
+                    $display("ALURes = %b", ALUResult);
+            end
+            4'b1010:       // SUB
                     ALUResult = SrcA - SrcB; 
+            4'b1011:        // ADDI
+                    ALUResult = SrcA + SrcB;            
             4'b1100:        // SLT
-                    ALUResult = (SrcA < SrcB) ? 1 : 0;                     
+                    ALUResult = (SrcA < SrcB) ? 1 : 0; 
+            4'b1101:        // BLT
+                    ALUResult = (SrcA < SrcB) ? 1 : 0;                    
             4'b1110:        // SRLI
                     ALUResult = SrcA >> SrcB;
-            4'b1011:        // ADDI
-                    ALUResult = SrcA + SrcB; 
-            4'b0100:        // JALR
-                    ALUResult = PcFour;
-                           
+            4'b1111:        // BGE
+                    ALUResult = (SrcA >= SrcB) ? 1 : 0;
+
             default:
                     ALUResult = 0;
             endcase
         end
 endmodule
-

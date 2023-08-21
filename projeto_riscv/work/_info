@@ -11,11 +11,7 @@ cModel Technology
 Z0 dC:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-<<<<<<< Updated upstream
-Z2 !s110 1692498767
-=======
-Z2 !s110 1692598201
->>>>>>> Stashed changes
+Z2 !s110 1692647212
 !i10b 1
 !s100 QIac6HObCMm5X?]1FgE4l1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -23,7 +19,7 @@ IZE^I<9U69QeTQ5dOY^H1^1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1691517437
+Z5 w1692571372
 8adder.sv
 Fadder.sv
 !i122 0
@@ -32,11 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-<<<<<<< Updated upstream
-Z7 !s108 1692498767.000000
-=======
-Z7 !s108 1692598200.000000
->>>>>>> Stashed changes
+Z7 !s108 1692647212.000000
 !s107 tb_top.sv|RISC_V.sv|Datapath.sv|instructionmemory.sv|datamemory.sv|mux4.sv|mux2.sv|imm_Gen.sv|HazardDetection.sv|ForwardingUnit.sv|flopr.sv|Controller.sv|BranchUnit.sv|ALUController.sv|alu.sv|RegFile.sv|RegPack.sv|Memoria32Data.sv|Memoria32.sv|ramOnChipData.v|ramOnChip32.v|adder.sv|
 Z8 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -45,31 +37,17 @@ valu
 R1
 R2
 !i10b 1
-<<<<<<< Updated upstream
-!s100 <9CgRE7?D8lk<B4YPL8YV3
+!s100 NG1hM6L]c[NJcUf>W9a^F2
 R3
-ICN=^VaI4NeX4XR6I86G=Y1
+Ic_GiVP?cC>5fZ;3=@mbM^0
 R4
 S1
 R0
-w1692497990
+w1692646868
 8alu.sv
 Falu.sv
 !i122 0
-L0 3 51
-=======
-!s100 CGmW;e:lC4U:JPb_WMD4M3
-R3
-I0Edk;cb^FAC7SJ:7:[>792
-R4
-S1
-R0
-w1692598185
-8alu.sv
-Falu.sv
-!i122 0
-L0 3 55
->>>>>>> Stashed changes
+L0 3 58
 R6
 r1
 !s85 0
@@ -83,27 +61,17 @@ vALUController
 R1
 R2
 !i10b 1
-<<<<<<< Updated upstream
-!s100 KTSzM2dcRY>lh8F4AeB@g1
+!s100 Cojm=KRmP9>fSA^i<Rho`3
 R3
-IEhIQ7B^XgQ7NJV8F_Bj9C2
+I3:19QREnTN1DlBTRa6NP02
 R4
 S1
 R0
-w1692484418
-=======
-!s100 TQ7K2mB[^G01No?[Df<023
-R3
-Ig75TfVhPlD@=CNFUF7dob2
-R4
-S1
-R0
-w1692589500
->>>>>>> Stashed changes
+w1692647179
 8ALUController.sv
 FALUController.sv
 !i122 0
-Z11 L0 3 41
+L0 3 48
 R6
 r1
 !s85 0
@@ -118,31 +86,17 @@ vBranchUnit
 R1
 R2
 !i10b 1
-<<<<<<< Updated upstream
-!s100 :7edcil5d@2k_T<Ki7T:]2
+!s100 d3OETVXNToPUolQnCzah91
 R3
-IIaQ89LESK@lTIl=<[L8J;3
+IHo1PS@R:og5h4AD05HKad3
 R4
 S1
 R0
-w1692490772
+w1692646202
 8BranchUnit.sv
 FBranchUnit.sv
 !i122 0
 L0 3 31
-=======
-!s100 WZ6l1<41j`Q0am?e>mZoP3
-R3
-ICRG_^X@S:mGmmLjfNlVK90
-R4
-S1
-R0
-w1692588344
-8BranchUnit.sv
-FBranchUnit.sv
-!i122 0
-L0 3 29
->>>>>>> Stashed changes
 R6
 r1
 !s85 0
@@ -157,31 +111,17 @@ vController
 R1
 R2
 !i10b 1
-<<<<<<< Updated upstream
-!s100 JZeQXRl8ZKUUCozoI9Lz10
-R3
-I6B<Sae@[b=]KM?L?:Oh301
-R4
-S1
-R0
-w1692494099
-8Controller.sv
-FController.sv
-!i122 0
-R11
-=======
 !s100 G>iNc2eUNM`@fBmZCVN0h2
 R3
 I4Mle4VT1bn>g[DMS@4h>n3
 R4
 S1
 R0
-w1692597694
+w1692646199
 8Controller.sv
 FController.sv
 !i122 0
 L0 3 45
->>>>>>> Stashed changes
 R6
 r1
 !s85 0
@@ -202,15 +142,11 @@ IFe^1;AjScPZ51U?eKC1iK2
 R4
 S1
 R0
-<<<<<<< Updated upstream
-w1692498400
-=======
-w1692572105
->>>>>>> Stashed changes
+Z11 w1692646175
 8datamemory.sv
 Fdatamemory.sv
 !i122 0
-Z12 L0 3 73
+L0 3 73
 R6
 r1
 !s85 0
@@ -222,41 +158,23 @@ R8
 R9
 vDatapath
 R1
-<<<<<<< Updated upstream
-Z13 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 _609:0U=P^P2>[^=3_eoQ1
-DXx4 work 16 Datapath_sv_unit 0 22 LcOHkg:07IMA?LP@M?Wiz2
-=======
-Z11 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 WOM6jY3^POzDP[SBlNhC`0
+Z12 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 ?@OG>zEl9CT07eBO]4O^R0
 DXx4 work 16 Datapath_sv_unit 0 22 iBX6Sl0k3dGh]6_SRA=3Y2
->>>>>>> Stashed changes
 R2
 R4
 r1
 !s85 0
 !i10b 1
-<<<<<<< Updated upstream
-!s100 eo^OOY[gXlj2mUBT:8FoA1
-ICb6Xf:Hmk^[J]dRAkRf_l0
+!s100 @A`DGTj@W:?@L>`CSXa862
+IH1LHok5IVf^1BhMi<XPS50
 !s105 Datapath_sv_unit
 S1
 R0
-Z14 w1692494796
-Z15 8Datapath.sv
-Z16 FDatapath.sv
-!i122 0
-L0 5 317
-=======
-!s100 U]caPZaC5D<]fQ3Yd70DX2
-Izl1_Rh]n:A[K>jMcJG^Zd0
-!s105 Datapath_sv_unit
-S1
-R0
-Z12 w1692598197
-Z13 8Datapath.sv
-Z14 FDatapath.sv
+Z13 w1692646896
+Z14 8Datapath.sv
+Z15 FDatapath.sv
 !i122 0
 L0 5 323
->>>>>>> Stashed changes
 R6
 31
 R7
@@ -267,29 +185,20 @@ R9
 n@datapath
 XDatapath_sv_unit
 R1
-R11
+R12
 R2
-<<<<<<< Updated upstream
-VLcOHkg:07IMA?LP@M?Wiz2
-r1
-!s85 0
-!i10b 1
-!s100 87Ko4Y9WniKkCLkTIOOFC3
-ILcOHkg:07IMA?LP@M?Wiz2
-=======
 ViBX6Sl0k3dGh]6_SRA=3Y2
 r1
 !s85 0
 !i10b 1
 !s100 Y>k0ijYJ]W]CR1QE3`YAY1
 IiBX6Sl0k3dGh]6_SRA=3Y2
->>>>>>> Stashed changes
 !i103 1
 S1
 R0
-R12
 R13
 R14
+R15
 !i122 0
 L0 3 0
 R6
@@ -378,31 +287,17 @@ vimm_Gen
 R1
 R2
 !i10b 1
-<<<<<<< Updated upstream
-!s100 fJ7Bnjj9V0>:SbYXfnK=@0
-R3
-Ij<5iZ]0UW4THcQK3b;HJC3
-R4
-S1
-R0
-w1692498321
-8imm_Gen.sv
-Fimm_Gen.sv
-!i122 0
-L0 3 44
-=======
 !s100 ciD]H?=bjRYICln>dYB?Y0
 R3
 IK7GO^0P3Udmickae@=hHe0
 R4
 S1
 R0
-w1692589553
+w1692646252
 8imm_Gen.sv
 Fimm_Gen.sv
 !i122 0
 L0 3 51
->>>>>>> Stashed changes
 R6
 r1
 !s85 0
@@ -451,7 +346,7 @@ R5
 8Memoria32.sv
 FMemoria32.sv
 !i122 0
-Z15 L0 26 94
+Z16 L0 26 94
 R6
 r1
 !s85 0
@@ -476,7 +371,7 @@ R5
 8Memoria32Data.sv
 FMemoria32Data.sv
 !i122 0
-R15
+R16
 R6
 r1
 !s85 0
@@ -539,23 +434,13 @@ XPipe_Buf_Reg_PKG
 R1
 R2
 !i10b 1
-<<<<<<< Updated upstream
-!s100 UK`2]D=<zLh=l5N:RiFJ]0
+!s100 OgL=3Yd3RLa^cZFz><NCY2
 R3
-I_609:0U=P^P2>[^=3_eoQ1
-V_609:0U=P^P2>[^=3_eoQ1
+I?@OG>zEl9CT07eBO]4O^R0
+V?@OG>zEl9CT07eBO]4O^R0
 S1
 R0
-w1692479998
-=======
-!s100 [Z3in@jkWmHP=?o:?J>z?2
-R3
-IWOM6jY3^POzDP[SBlNhC`0
-VWOM6jY3^POzDP[SBlNhC`0
-S1
-R0
-w1692587989
->>>>>>> Stashed changes
+w1692646778
 8RegPack.sv
 FRegPack.sv
 !i122 0
@@ -582,7 +467,7 @@ R5
 8ramOnChip32.v
 FramOnChip32.v
 !i122 0
-Z16 L0 40 78
+Z17 L0 40 78
 R6
 r1
 !s85 0
@@ -605,7 +490,7 @@ R5
 8ramOnChipData.v
 FramOnChipData.v
 !i122 0
-R16
+R17
 R6
 r1
 !s85 0
@@ -645,31 +530,17 @@ vriscv
 R1
 R2
 !i10b 1
-<<<<<<< Updated upstream
-!s100 ffCIcD69Sh8MZjWDc4A733
+!s100 ]bnkj]mz=cPn@ddMCKKCd1
 R3
-IWnWDi<@lfbl;WzB_1A25G1
+I]Ab59mXI_mF]=c:4Ykd101
 R4
 S1
 R0
-w1692480782
+w1692646698
 8RISC_V.sv
 FRISC_V.sv
 !i122 0
-R12
-=======
-!s100 m1aVkYnHYKNBSTJU66h<X2
-R3
-INUT<z_E?`E7OVPV6];2@Y1
-R4
-S1
-R0
-w1692588025
-8RISC_V.sv
-FRISC_V.sv
-!i122 0
-L0 3 76
->>>>>>> Stashed changes
+L0 3 75
 R6
 r1
 !s85 0
@@ -689,11 +560,7 @@ I`ZC>alZ:L3UZEf:2h:31f0
 R4
 S1
 R0
-<<<<<<< Updated upstream
-w1692497934
-=======
-w1692571383
->>>>>>> Stashed changes
+R11
 8tb_top.sv
 Ftb_top.sv
 !i122 0

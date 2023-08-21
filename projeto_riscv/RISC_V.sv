@@ -19,15 +19,9 @@ module riscv #(
 );
 
   logic [6:0] opcode;
-<<<<<<< Updated upstream
-  logic ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, Jump;
-  logic [1:0] ALUop;
-  logic [1:0] ALUop_Reg;
-=======
   logic ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, Jump, CurrFlag;
   logic [2:0] ALUop;
   logic [2:0] ALUop_Reg;
->>>>>>> Stashed changes
   logic [6:0] Funct7;
   logic [2:0] Funct3;
   logic [3:0] Operation;
@@ -41,12 +35,8 @@ module riscv #(
       MemWrite,
       ALUop,
       Branch,
-<<<<<<< Updated upstream
-      Jump
-=======
       Jump,
       CurrFlag
->>>>>>> Stashed changes
   );
 
   ALUController ac (
@@ -66,10 +56,7 @@ module riscv #(
       MemRead,
       Branch,
       Jump,
-<<<<<<< Updated upstream
-=======
       CurrFlag,
->>>>>>> Stashed changes
       ALUop,
       Operation,
       opcode,

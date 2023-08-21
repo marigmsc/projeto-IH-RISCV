@@ -5,13 +5,6 @@ DATA_RADIX = BIN;		-- The radix for data values
 CONTENT					-- Start of (address: data pairs)
 BEGIN
 
-<<<<<<< Updated upstream
-000: 00000011;		-- lh x4,1(x0)
-001: 00010010;
-002: 00010000;
-003: 00000000;
-
-=======
 000: 00000011;		-- lw x4,1(x0)
 001: 00100010;
 002: 00010000;
@@ -47,5 +40,4 @@ BEGIN
 026: 11001111;
 027: 11111111;
 
->>>>>>> Stashed changes
 END;

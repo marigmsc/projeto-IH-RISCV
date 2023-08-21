@@ -7,15 +7,9 @@ module BranchUnit #(
     input logic [31:0] Imm, //Offset 32 bits branch adress
     input logic Branch, //sinal de controle. 1 = branch em execução
     input logic Jump,
-<<<<<<< Updated upstream
-    input logic [31:0] AluResult,// Resultado da operação lógica aritmética da ALU
-    input logic [2:0] Func3,
-    input logic [6:0] opcode,
-=======
     input logic CurrFlag,
     input logic [31:0] AluResult,// Resultado da operação lógica aritmética da ALU
     input logic [31:0] Reg2,
->>>>>>> Stashed changes
     output logic [31:0] PC_Imm, // Novo valor de PC caso a condição da branch seja válida depois do ImmGen
     output logic [31:0] PC_Four, // Novo valor de PC caso a condição da branch não seja válida
     output logic [31:0] BrPC, // Novo valor de PC caso a condição da branch seja válida, se não for receber um valor não importante
