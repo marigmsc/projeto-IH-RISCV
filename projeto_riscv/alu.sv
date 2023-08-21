@@ -23,11 +23,18 @@ module alu#(
                     ALUResult = SrcA & SrcB;
             4'b0001:        // XOR 
                     ALUResult = (SrcA ^ SrcB);
-            4'b0010:        // ADD 
+            4'b0010:       // ADD 
                     ALUResult = SrcA + SrcB;
+                    
             4'b0011:        //SLTI 
                     ALUResult = (SrcA < SrcB) ? 1 : 0;
+<<<<<<< Updated upstream
             4'b0101:       //  OR
+=======
+            4'b0100:        // BNE
+                    ALUResult = (SrcA != SrcB) ? 1 : 0;
+            4'b0101:     //  OR
+>>>>>>> Stashed changes
                     ALUResult = SrcA | SrcB;
             4'b0110:       // SLLI
                     ALUResult = SrcA << SrcB;
