@@ -2,7 +2,7 @@
 
 module ALUController (
     //Inputs
-    input logic [1:0] ALUOp,  // 2-bit opcode field from the Controller--00: LW/SW/AUIPC; 01:Branch; 10: Rtype/Itype; 11:JAL/LUI
+    input logic [2:0] ALUOp,  // 2-bit opcode field from the Controller--00: LW/SW/AUIPC; 01:Branch; 10: Rtype/Itype; 11:JAL/LUI
     input logic [6:0] Funct7,  // bits 25 to 31 of the instruction
     input logic [2:0] Funct3,  // bits 12 to 14 of the instruction
     input logic [6:0] opcode,

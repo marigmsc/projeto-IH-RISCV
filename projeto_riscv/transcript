@@ -1,39 +1,7 @@
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:10:21 on Aug 20,2023
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# ** Error: (vlog-13069) alu.sv(33): near ";": syntax error, unexpected ';', expecting ':'.
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# End time: 19:10:22 on Aug 20,2023, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runtb_top line 4
-# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -f compile_verilog"
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:11:15 on Aug 20,2023
+# Start time: 21:26:38 on Aug 20,2023
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -62,10 +30,10 @@ do runtb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 19:11:15 on Aug 20,2023, Elapsed time: 0:00:00
+# End time: 21:26:39 on Aug 20,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 19:11:16 on Aug 20,2023
+# Start time: 21:26:39 on Aug 20,2023
 # Loading sv_std.std
 # Loading work.tb_top
 # Loading work.riscv
@@ -96,9 +64,9 @@ do runtb_top
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlft09aihf".
+#           Attempting to use alternate WLF file "./wlftc675dg".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft09aihf
+#           Using alternate file: ./wlftc675dg
 # hexadecimal
 # unsigned
 # hexadecimal
