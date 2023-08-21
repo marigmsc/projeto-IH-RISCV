@@ -19,22 +19,27 @@ module Controller (
     output logic Branch  //0: branch is not taken; 1: branch is taken
 );
 
-  logic [6:0] R_TYPE, LW, SW, BR, SRAI;
+  logic [6:0] R_TYPE, LW, SW, BR, SRAI,LUI;
 
   assign R_TYPE = 7'b0110011;  //add,and
   assign LW = 7'b0000011;  //lw
   assign SW = 7'b0100011;  //sw
   assign BR = 7'b1100011;  //beq
   assign SRAI = 7'b0010011; // SRAI, SLLI,SLTI, ADDI
-  
+  assign LUI = 7'b0110111; // LUI
 
-  assign ALUSrc = (Opcode == LW || Opcode == SW || Opcode == SRAI);
+
+  assign ALUSrc = (Opcode == LW || Opcode == SW || Opcode == SRAI || Opcode == LUI);
   assign MemtoReg = (Opcode == LW);
-  assign RegWrite = (Opcode == R_TYPE || Opcode == LW || Opcode == SRAI);
+  assign RegWrite = (Opcode == R_TYPE || Opcode == LW || Opcode == SRAI || Opcode == LUI);
   assign MemRead = (Opcode == LW);
-  assign MemWrite = (Opcode == SW);
-  assign ALUOp[0] = (Opcode == BR);
-  assign ALUOp[1] = (Opcode == R_TYPE);
-  assign ALUOp[2] = (Opcode == LW || Opcode == SW);
+  assign MemWrite = (Opcode == SW );
+  assign ALUOp[0] = (Opcode == BR) || (Opcode == LUI);
+  assign ALUOp[1] = (Opcode == R_TYPE || Opcode == LUI);
+  assign ALUOp[2] = (Opcode == LW || Opcode == SW) ;
   assign Branch = (Opcode == BR);
+   always_comb begin
+    $display("Opcode = %b",Opcode);
+    $display("ALUOp = %b",ALUOp);
+  end
 endmodule

@@ -13,6 +13,14 @@ module imm_Gen (
           Imm_out = {20'b0, inst_code[31:20]}; //LBU
         end else
           Imm_out = {inst_code[31] ? 20'hFFFFF : 20'b0, inst_code[31:20]}; //LH,LW
+      
+      
+      7'b0110111:begin		//LUI 
+					Imm_out = {inst_code[31:12],12'b0};
+          $display("ImmOut = %b", Imm_out);
+
+      end
+
 
       7'b0000000:
         Imm_out = {inst_code[31] ? 20'hFFFFF : 20'b0, inst_code[24:20]};

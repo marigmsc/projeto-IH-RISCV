@@ -1,7 +1,7 @@
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:45:05 on Aug 20,2023
+# Start time: 00:18:08 on Aug 21,2023
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -12,344 +12,21 @@ do runtb_top
 # -- Compiling module RegFile
 # -- Compiling module alu
 # -- Compiling module ALUController
+# ** Error: ALUController.sv(13): Illegal assignment expression in continuous assignment.
+# ** Error: ALUController.sv(42): Illegal assignment expression in continuous assignment.
 # -- Compiling module BranchUnit
 # -- Compiling module Controller
 # -- Compiling module flopr
 # -- Compiling module ForwardingUnit
 # -- Compiling module HazardDetection
 # -- Compiling module imm_Gen
+# ** Error: imm_Gen.sv(19): (vlog-2730) Undefined variable: 'imm'.
 # -- Compiling module mux2
 # -- Compiling module mux4
 # -- Compiling module datamemory
 # -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 23:45:05 on Aug 20,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 23:45:05 on Aug 20,2023
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlfts3qc5m".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfts3qc5m
-# hexadecimal
-# unsigned
-# hexadecimal
-# unsigned
-# unsigned
-# unsigned
-# hexadecimal
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Operation: xxxx
-# Operation: 1001
-# Operation: 0010
-# Operation: 0010
-#                   35: Memory [  2] read with value: [xxxxxxxx] | [         x]
-# 
-#                   35: Memory [  2] read with value: [00000401] | [      1025]
-# 
-#                   40: Memory [  2] read with value: [00000000] | [         0]
-# 
-# Operation: 1001
-#                   45: Memory [  3] written with value: [00000000] | [         0]
-# 
-#                   45: Register [ 1] written with value: [00000000] | [         0]
-# 
-# ** Note: $stop    : tb_top.sv(43)
-#    Time: 510 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at tb_top.sv line 43
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Error 31: Unable to unlink file "C:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv/work/_lib.qdb".
-# Error 133: Unable to remove directory "C:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv/work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:46:14 on Aug 20,2023
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 23:46:14 on Aug 20,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 23:46:16 on Aug 20,2023, Elapsed time: 0:01:11
-# Errors: 0, Warnings: 3
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 23:46:16 on Aug 20,2023
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlfteghkef".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfteghkef
-# hexadecimal
-# unsigned
-# hexadecimal
-# unsigned
-# unsigned
-# unsigned
-# hexadecimal
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Operation: xxxx
-# Operation: 1001
-# Operation: 0001
-# Operation: 1001
-# Operation: 0001
-#                   45: Register [ 1] written with value: [00000000] | [         0]
-# 
-# Operation: 0011
-# Operation: 1001
-#                   65: Register [ 2] written with value: [00000000] | [         0]
-# 
-#                   75: Register [ 2] written with value: [00000001] | [         1]
-# 
-# ** Note: $stop    : tb_top.sv(43)
-#    Time: 510 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at tb_top.sv line 43
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:47:22 on Aug 20,2023
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 23:47:22 on Aug 20,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 23:47:24 on Aug 20,2023, Elapsed time: 0:01:08
-# Errors: 0, Warnings: 3
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 23:47:24 on Aug 20,2023
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlfts08qym".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfts08qym
-# hexadecimal
-# unsigned
-# hexadecimal
-# unsigned
-# unsigned
-# unsigned
-# hexadecimal
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Operation: xxxx
-# Operation: 1001
-# Operation: 1001
-# Operation: 1001
-#                   45: Register [ 1] written with value: [00000000] | [         0]
-# 
-# ** Note: $stop    : tb_top.sv(43)
-#    Time: 510 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at tb_top.sv line 43
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:48:19 on Aug 20,2023
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# ** Error: (vlog-13069) ALUController.sv(24): near "(": syntax error, unexpected '(', expecting ';' or ','.
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# End time: 23:48:19 on Aug 20,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
+# End time: 00:18:08 on Aug 21,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
 # ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
 # Error in macro ./runtb_top line 4
 # C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
@@ -358,7 +35,7 @@ do runtb_top
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:48:25 on Aug 20,2023
+# Start time: 00:19:52 on Aug 21,2023
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -369,444 +46,39 @@ do runtb_top
 # -- Compiling module RegFile
 # -- Compiling module alu
 # -- Compiling module ALUController
+# ** Error: ALUController.sv(13): Illegal assignment expression in continuous assignment.
+# ** Error: ALUController.sv(42): Illegal assignment expression in continuous assignment.
 # -- Compiling module BranchUnit
 # -- Compiling module Controller
 # -- Compiling module flopr
 # -- Compiling module ForwardingUnit
 # -- Compiling module HazardDetection
 # -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 23:48:26 on Aug 20,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 23:48:28 on Aug 20,2023, Elapsed time: 0:01:04
-# Errors: 1, Warnings: 3
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 23:48:28 on Aug 20,2023
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlftx8kbh2".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftx8kbh2
-# hexadecimal
-# unsigned
-# hexadecimal
-# unsigned
-# unsigned
-# unsigned
-# hexadecimal
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Operation: xxxx
-# Operation: 1011
-# Operation: 1011
-# Operation: 1011
-#                   45: Register [ 1] written with value: [00000004] | [         4]
-# 
-# ** Note: $stop    : tb_top.sv(43)
-#    Time: 510 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at tb_top.sv line 43
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:50:02 on Aug 20,2023
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 23:50:03 on Aug 20,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 23:50:05 on Aug 20,2023, Elapsed time: 0:01:37
-# Errors: 0, Warnings: 3
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 23:50:05 on Aug 20,2023
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlftdg0j9a".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftdg0j9a
-# hexadecimal
-# unsigned
-# hexadecimal
-# unsigned
-# unsigned
-# unsigned
-# hexadecimal
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Operation: xxxx
-# Operation: 1011
-# Operation: 1011
-# Operation: 0100
-# Operation: 1011
-#                   45: Register [ 1] written with value: [00000004] | [         4]
-# 
-#                   55: Register [ 1] written with value: [00000001] | [         1]
-# 
-# ** Note: $stop    : tb_top.sv(43)
-#    Time: 510 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at tb_top.sv line 43
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:51:40 on Aug 20,2023
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 23:51:40 on Aug 20,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 23:51:42 on Aug 20,2023, Elapsed time: 0:01:37
-# Errors: 0, Warnings: 3
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 23:51:42 on Aug 20,2023
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlftd16yts".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftd16yts
-# hexadecimal
-# unsigned
-# hexadecimal
-# unsigned
-# unsigned
-# unsigned
-# hexadecimal
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Operation: xxxx
-# Operation: 1011
-# Operation: 1011
-# Operation: 0001
-# Operation: 0011
-#                   45: Register [ 1] written with value: [00000004] | [         4]
-# 
-# Operation: 0001
-#                   55: Register [ 2] written with value: [00000000] | [         0]
-# 
-# Operation: 0011
-#                   65: Register [ 2] written with value: [00000001] | [         1]
-# 
-# Operation: 1011
-#                   75: Register [ 3] written with value: [00000000] | [         0]
-# 
-# ** Note: $stop    : tb_top.sv(43)
-#    Time: 510 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at tb_top.sv line 43
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:52:06 on Aug 20,2023
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 23:52:07 on Aug 20,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 23:52:09 on Aug 20,2023, Elapsed time: 0:00:27
-# Errors: 0, Warnings: 3
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 23:52:09 on Aug 20,2023
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlftb2kj2z".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftb2kj2z
-# hexadecimal
-# unsigned
-# hexadecimal
-# unsigned
-# unsigned
-# unsigned
-# hexadecimal
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Operation: xxxx
-# Operation: 1011
-# Operation: 0100
-# Operation: 1011
-#                   45: Register [ 1] written with value: [00000001] | [         1]
-# 
-# ** Note: $stop    : tb_top.sv(43)
-#    Time: 510 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at tb_top.sv line 43
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:52:55 on Aug 20,2023
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# ** Error: (vlog-13069) ALUController.sv(24): near "(": syntax error, unexpected '(', expecting ';' or ','.
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# End time: 23:52:55 on Aug 20,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
+# ** Error: (vlog-13069) imm_Gen.sv(25): near "7": syntax error, unexpected INTEGER NUMBER.
+# ** Error: mux2.sv(12): (vlog-2730) Undefined variable: 'y'.
+# ** Error: mux2.sv(12): (vlog-2730) Undefined variable: 's'.
+# ** Error: mux2.sv(12): (vlog-2730) Undefined variable: 'd1'.
+# ** Error: mux2.sv(12): (vlog-2730) Undefined variable: 'd0'.
+# ** Error: mux2.sv(12): LHS in procedural continuous assignment may not be a net: y.
+# ** Error: (vlog-13069) mux2.sv(14): near "endmodule": syntax error, unexpected endmodule.
+# ** Error: mux4.sv(14): (vlog-2730) Undefined variable: 'd11'.
+# ** Error: mux4.sv(14): (vlog-2730) Undefined variable: 'd10'.
+# ** Error: mux4.sv(14): (vlog-2730) Undefined variable: 'd01'.
+# ** Error: mux4.sv(14): (vlog-2730) Undefined variable: 'd00'.
+# ** Error: mux4.sv(14): LHS in procedural continuous assignment may not be a net: y.
+# ** Error: (vlog-13069) mux4.sv(16): near "endmodule": syntax error, unexpected endmodule.
+# ** Error: datamemory.sv(22): Illegal declaration after the statement near line '14'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: datamemory.sv(33): (vlog-2730) Undefined variable: 'a'.
+# ** Error: datamemory.sv(34): (vlog-2730) Undefined variable: 'wd'.
+# ** Error: datamemory.sv(37): (vlog-2730) Undefined variable: 'MemRead'.
+# ** Error: datamemory.sv(38): (vlog-2730) Undefined variable: 'Funct3'.
+# ** Error: datamemory.sv(40): (vlog-2730) Undefined variable: 'rd'.
+# ** Error: datamemory.sv(50): (vlog-2730) Undefined variable: 'MemWrite'.
+# ** Error: datamemory.sv(51): (vlog-2730) Undefined variable: 'Funct3'.
+# ** Error: (vlog-13069) datamemory.sv(70): near "endmodule": syntax error, unexpected endmodule.
+# ** Error: instructionmemory.sv(13): (vlog-2730) Undefined variable: 'INS_W'.
+# End time: 00:19:53 on Aug 21,2023, Elapsed time: 0:00:01
+# Errors: 25, Warnings: 0
 # ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
 # Error in macro ./runtb_top line 4
 # C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
@@ -815,7 +87,40 @@ do runtb_top
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:00 on Aug 20,2023
+# Start time: 00:20:24 on Aug 21,2023
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# ** Error: ALUController.sv(13): Illegal assignment expression in continuous assignment.
+# ** Error: ALUController.sv(42): Illegal assignment expression in continuous assignment.
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# End time: 00:20:24 on Aug 21,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runtb_top line 4
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -f compile_verilog"
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:20:42 on Aug 21,2023
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -844,12 +149,184 @@ do runtb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 23:53:01 on Aug 20,2023, Elapsed time: 0:00:01
+# End time: 00:20:42 on Aug 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 23:53:03 on Aug 20,2023, Elapsed time: 0:00:54
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 00:20:43 on Aug 21,2023
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error: (vsim-3043) Unresolved reference to 'Imm_Out'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/Ext_Imm File: imm_Gen.sv Line: 20
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runtb_top PAUSED at line 5
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:21:33 on Aug 21,2023
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 00:21:34 on Aug 21,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 00:20:43 on Aug 21,2023
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
+#           Attempting to use alternate WLF file "./wlftq3avfh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftq3avfh
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Operation: xxxx
+# Operation: 1011
+# ImmOut = 00000000000000000100000000000000
+# Operation: 0000
+# Operation: 1011
+# ** Note: $stop    : tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Error 31: Unable to unlink file "C:/Users/maria/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv/work/_lib.qdb".
+# Error 133: Unable to remove directory "C:/Users/maria/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv/work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:24:17 on Aug 21,2023
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 00:24:17 on Aug 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:24:19 on Aug 21,2023, Elapsed time: 0:03:36
 # Errors: 1, Warnings: 3
 # vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 23:53:03 on Aug 20,2023
+# Start time: 00:24:20 on Aug 21,2023
 # Loading sv_std.std
 # Loading work.tb_top
 # Loading work.riscv
@@ -880,9 +357,9 @@ do runtb_top
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlfthfb35d".
+#           Attempting to use alternate WLF file "./wlft4dm8f2".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfthfb35d
+#           Using alternate file: ./wlft4dm8f2
 # hexadecimal
 # unsigned
 # hexadecimal
@@ -908,17 +385,16 @@ do runtb_top
 # Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
 # Operation: xxxx
 # Operation: 1011
-# Operation: 0110
+# ImmOut = 00000000000000000100000000000000
+# Operation: 0000
 # Operation: 1011
-#                   45: Register [ 1] written with value: [00000000] | [         0]
-# 
 # ** Note: $stop    : tb_top.sv(43)
 #    Time: 510 ns  Iteration: 0  Instance: /tb_top
 # Break in Module tb_top at tb_top.sv line 43
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:32 on Aug 20,2023
+# Start time: 00:24:56 on Aug 21,2023
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -947,12 +423,12 @@ do runtb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 23:53:33 on Aug 20,2023, Elapsed time: 0:00:01
+# End time: 00:24:56 on Aug 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 23:53:35 on Aug 20,2023, Elapsed time: 0:00:32
+# End time: 00:24:58 on Aug 21,2023, Elapsed time: 0:00:38
 # Errors: 0, Warnings: 3
 # vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 23:53:35 on Aug 20,2023
+# Start time: 00:24:59 on Aug 21,2023
 # Loading sv_std.std
 # Loading work.tb_top
 # Loading work.riscv
@@ -983,9 +459,9 @@ do runtb_top
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlftxwj1gi".
+#           Attempting to use alternate WLF file "./wlftmwkvqh".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftxwj1gi
+#           Using alternate file: ./wlftmwkvqh
 # hexadecimal
 # unsigned
 # hexadecimal
@@ -1011,20 +487,16 @@ do runtb_top
 # Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
 # Operation: xxxx
 # Operation: 1011
+# ImmOut = 00000000000000000100000000000000
+# Operation: 0000
 # Operation: 1011
-# Operation: 0110
-# Operation: 1011
-#                   45: Register [ 1] written with value: [00000004] | [         4]
-# 
-#                   55: Register [ 1] written with value: [00000008] | [         8]
-# 
 # ** Note: $stop    : tb_top.sv(43)
 #    Time: 510 ns  Iteration: 0  Instance: /tb_top
 # Break in Module tb_top at tb_top.sv line 43
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:54:40 on Aug 20,2023
+# Start time: 00:27:52 on Aug 21,2023
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -1053,12 +525,12 @@ do runtb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 23:54:40 on Aug 20,2023, Elapsed time: 0:00:00
+# End time: 00:27:53 on Aug 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# End time: 23:54:44 on Aug 20,2023, Elapsed time: 0:01:09
+# End time: 00:27:55 on Aug 21,2023, Elapsed time: 0:02:56
 # Errors: 0, Warnings: 3
 # vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 23:54:45 on Aug 20,2023
+# Start time: 00:27:55 on Aug 21,2023
 # Loading sv_std.std
 # Loading work.tb_top
 # Loading work.riscv
@@ -1089,9 +561,9 @@ do runtb_top
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlftid4dkn".
+#           Attempting to use alternate WLF file "./wlftc1v7kd".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftid4dkn
+#           Using alternate file: ./wlftc1v7kd
 # hexadecimal
 # unsigned
 # hexadecimal
@@ -1117,26 +589,16 @@ do runtb_top
 # Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
 # Operation: xxxx
 # Operation: 1011
-# Operation: 0010
+# ImmOut = 00000000000000000100000000000000
+# Operation: 0000
 # Operation: 1011
-#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
-# 
-#                   35: Memory [  1] read with value: [00000401] | [      1025]
-# 
-#                   40: Memory [  1] read with value: [00000004] | [         4]
-# 
-#                   45: Register [ 1] written with value: [00000004] | [         4]
-# 
 # ** Note: $stop    : tb_top.sv(43)
 #    Time: 510 ns  Iteration: 0  Instance: /tb_top
 # Break in Module tb_top at tb_top.sv line 43
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
-# Error 31: Unable to unlink file "C:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv/work/_lib1_0.qpg".
-# Error 31: Unable to unlink file "C:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv/work/_lib1_0.qtl".
-# Error 133: Unable to remove directory "C:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv/work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:55:33 on Aug 20,2023
+# Start time: 00:34:28 on Aug 21,2023
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -1165,12 +627,12 @@ do runtb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 23:55:33 on Aug 20,2023, Elapsed time: 0:00:00
+# End time: 00:34:28 on Aug 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 23:55:36 on Aug 20,2023, Elapsed time: 0:00:51
+# End time: 00:34:31 on Aug 21,2023, Elapsed time: 0:06:36
 # Errors: 0, Warnings: 3
 # vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 23:55:36 on Aug 20,2023
+# Start time: 00:34:31 on Aug 21,2023
 # Loading sv_std.std
 # Loading work.tb_top
 # Loading work.riscv
@@ -1201,9 +663,9 @@ do runtb_top
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlft5cq4s2".
+#           Attempting to use alternate WLF file "./wlftij9wv1".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft5cq4s2
+#           Using alternate file: ./wlftij9wv1
 # hexadecimal
 # unsigned
 # hexadecimal
@@ -1229,27 +691,16 @@ do runtb_top
 # Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
 # Operation: xxxx
 # Operation: 1011
-# Operation: 0010
+# ImmOut = 00000000000000000100000000000000
+# Operation: 0000
 # Operation: 1011
-#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
-# 
-#                   35: Memory [  1] read with value: [00000401] | [      1025]
-# 
-#                   40: Memory [  1] read with value: [00000004] | [         4]
-# 
-# Operation: 0010
-#                   45: Register [ 1] written with value: [00000004] | [         4]
-# 
-# Operation: 1011
-#                   55: Memory [  2] written with value: [00000004] | [         4]
-# 
 # ** Note: $stop    : tb_top.sv(43)
 #    Time: 510 ns  Iteration: 0  Instance: /tb_top
 # Break in Module tb_top at tb_top.sv line 43
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:58:29 on Aug 20,2023
+# Start time: 00:36:48 on Aug 21,2023
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -1278,12 +729,12 @@ do runtb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 23:58:29 on Aug 20,2023, Elapsed time: 0:00:00
+# End time: 00:36:48 on Aug 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 23:58:33 on Aug 20,2023, Elapsed time: 0:02:57
+# End time: 00:36:50 on Aug 21,2023, Elapsed time: 0:02:19
 # Errors: 0, Warnings: 3
 # vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 23:58:33 on Aug 20,2023
+# Start time: 00:36:51 on Aug 21,2023
 # Loading sv_std.std
 # Loading work.tb_top
 # Loading work.riscv
@@ -1314,9 +765,9 @@ do runtb_top
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlft54rfr7".
+#           Attempting to use alternate WLF file "./wlftdbwqv0".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft54rfr7
+#           Using alternate file: ./wlftdbwqv0
 # hexadecimal
 # unsigned
 # hexadecimal
@@ -1341,56 +792,21 @@ do runtb_top
 # Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
 # Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
 # Operation: xxxx
+# Opcode = xxxxxxx
+# Opcode = 0000000
 # Operation: 1011
-# Operation: 0010
+# ImmOut = 00000000000000000100000000000000
+# Opcode = 0110111
+# Opcode = 0000000
+# Operation: 0000
 # Operation: 1011
-#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
-# 
-#                   35: Memory [  1] read with value: [00000401] | [      1025]
-# 
-#                   40: Memory [  1] read with value: [00000004] | [         4]
-# 
-# Operation: 1011
-#                   45: Register [ 1] written with value: [00000004] | [         4]
-# 
-# Operation: 0001
-# Operation: 0010
-#                   65: Register [ 1] written with value: [00000008] | [         8]
-# 
-# Operation: 1010
-#                   75: Register [ 6] written with value: [00000000] | [         0]
-# 
-# Operation: 1100
-#                   85: Register [ 6] written with value: [00000010] | [        16]
-# 
-# Operation: 0111
-#                   95: Register [ 7] written with value: [00000008] | [         8]
-# 
-# Operation: 0101
-# Entrou
-#                  105: Register [ 8] written with value: [00000000] | [         0]
-# 
-# Operation: 0010
-#                  115: Register [ 3] written with value: [00000004] | [         4]
-# 
-# Operation: 0010
-#                  125: Memory [  3] written with value: [00000004] | [         4]
-# 
-#                  125: Register [ 4] written with value: [00000014] | [        20]
-# 
-# Operation: 0010
-#                  135: Memory [  4] written with value: [00000014] | [        20]
-# 
-# Operation: 1011
-#                  145: Memory [  5] written with value: [00000000] | [         0]
-# 
 # ** Note: $stop    : tb_top.sv(43)
 #    Time: 510 ns  Iteration: 0  Instance: /tb_top
 # Break in Module tb_top at tb_top.sv line 43
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:02:50 on Aug 21,2023
+# Start time: 00:38:06 on Aug 21,2023
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -1419,12 +835,12 @@ do runtb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 00:02:50 on Aug 21,2023, Elapsed time: 0:00:00
+# End time: 00:38:07 on Aug 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# End time: 00:02:53 on Aug 21,2023, Elapsed time: 0:04:20
+# End time: 00:38:09 on Aug 21,2023, Elapsed time: 0:01:18
 # Errors: 0, Warnings: 3
 # vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 00:02:53 on Aug 21,2023
+# Start time: 00:38:10 on Aug 21,2023
 # Loading sv_std.std
 # Loading work.tb_top
 # Loading work.riscv
@@ -1455,9 +871,9 @@ do runtb_top
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlftqsj7y3".
+#           Attempting to use alternate WLF file "./wlft5rvdkg".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftqsj7y3
+#           Using alternate file: ./wlft5rvdkg
 # hexadecimal
 # unsigned
 # hexadecimal
@@ -1482,18 +898,25 @@ do runtb_top
 # Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
 # Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
 # Operation: xxxx
+# Opcode = xxxxxxx
+# ALUOp = xxx
+# Opcode = 0000000
+# ALUOp = 000
 # Operation: 1011
-# Operation: 1100
+# ImmOut = 00000000000000000100000000000000
+# Opcode = 0110111
+# ALUOp = 000
+# Opcode = 0000000
+# ALUOp = 000
+# Operation: 0000
 # Operation: 1011
-#                   45: Register [ 8] written with value: [00000001] | [         1]
-# 
 # ** Note: $stop    : tb_top.sv(43)
 #    Time: 510 ns  Iteration: 0  Instance: /tb_top
 # Break in Module tb_top at tb_top.sv line 43
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:03:42 on Aug 21,2023
+# Start time: 00:39:19 on Aug 21,2023
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -1522,12 +945,12 @@ do runtb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 00:03:43 on Aug 21,2023, Elapsed time: 0:00:01
+# End time: 00:39:19 on Aug 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 00:03:45 on Aug 21,2023, Elapsed time: 0:00:52
+# End time: 00:39:21 on Aug 21,2023, Elapsed time: 0:01:11
 # Errors: 0, Warnings: 3
 # vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 00:03:45 on Aug 21,2023
+# Start time: 00:39:22 on Aug 21,2023
 # Loading sv_std.std
 # Loading work.tb_top
 # Loading work.riscv
@@ -1558,9 +981,9 @@ do runtb_top
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlftfiq2rf".
+#           Attempting to use alternate WLF file "./wlftg0ib9t".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftfiq2rf
+#           Using alternate file: ./wlftg0ib9t
 # hexadecimal
 # unsigned
 # hexadecimal
@@ -1585,10 +1008,20 @@ do runtb_top
 # Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
 # Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
 # Operation: xxxx
+# Opcode = xxxxxxx
+# ALUOp = xxx
+# Opcode = 0000000
+# ALUOp = 000
 # Operation: 1011
-# Operation: 1110
+# ImmOut = 00000000000000000100000000000000
+# Opcode = 0110111
+# ALUOp = 111
+# Opcode = 0000000
+# ALUOp = 000
+# Operation: 1001
+# ALURes = 00000000000000000100000000000000
 # Operation: 1011
-#                   45: Register [ 8] written with value: [00000000] | [         0]
+#                   45: Register [ 1] written with value: [00004000] | [     16384]
 # 
 # ** Note: $stop    : tb_top.sv(43)
 #    Time: 510 ns  Iteration: 0  Instance: /tb_top
@@ -1596,7 +1029,7 @@ do runtb_top
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:04:06 on Aug 21,2023
+# Start time: 00:42:27 on Aug 21,2023
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -1625,12 +1058,12 @@ do runtb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 00:04:07 on Aug 21,2023, Elapsed time: 0:00:01
+# End time: 00:42:27 on Aug 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 00:04:09 on Aug 21,2023, Elapsed time: 0:00:24
+# End time: 00:42:29 on Aug 21,2023, Elapsed time: 0:03:07
 # Errors: 0, Warnings: 3
 # vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 00:04:09 on Aug 21,2023
+# Start time: 00:42:30 on Aug 21,2023
 # Loading sv_std.std
 # Loading work.tb_top
 # Loading work.riscv
@@ -1661,9 +1094,9 @@ do runtb_top
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: foxwo  Hostname: LAPTOP-KTSI84IB  ProcessID: 14496
-#           Attempting to use alternate WLF file "./wlft59szb2".
+#           Attempting to use alternate WLF file "./wlftg28b6h".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft59szb2
+#           Using alternate file: ./wlftg28b6h
 # hexadecimal
 # unsigned
 # hexadecimal
@@ -1688,19 +1121,20 @@ do runtb_top
 # Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
 # Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
 # Operation: xxxx
+# Opcode = xxxxxxx
+# ALUOp = xxx
+# Opcode = 0000000
+# ALUOp = 000
 # Operation: 1011
-# Operation: 0001
+# ImmOut = 00000000000000000100000000000000
+# Opcode = 0110111
+# ALUOp = 011
+# Opcode = 0000000
+# ALUOp = 000
+# Operation: 1001
+# ALURes = 00000000000000000100000000000000
 # Operation: 1011
-# Operation: 0001
-#                   45: Register [ 1] written with value: [00000000] | [         0]
-# 
-# Operation: 1110
-#                   55: Register [ 1] written with value: [00000004] | [         4]
-# 
-# Operation: 1011
-#                   65: Register [ 2] written with value: [00000000] | [         0]
-# 
-#                   75: Register [ 2] written with value: [00000002] | [         2]
+#                   45: Register [ 1] written with value: [00004000] | [     16384]
 # 
 # ** Note: $stop    : tb_top.sv(43)
 #    Time: 510 ns  Iteration: 0  Instance: /tb_top

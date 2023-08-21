@@ -17,7 +17,8 @@ module ALUController (
       ((ALUOp == 3'b000) && (Funct3 == 3'b101) && (Funct7 == 7'b0100000))  || //SRAI
       ((ALUOp == 3'b010) && (Funct3 == 3'b100) && (Funct7 == 7'b0000000)) || //XOR
       ((ALUOp == 3'b000) && (Funct3 == 3'b010)) ||  // SLTI
-      ((ALUOp == 3'b000) && (Funct3 == 3'b000));  // ADDI;
+      ((ALUOp == 3'b000) && (Funct3 == 3'b000)) || // ADDI;
+      ((ALUOp == 3'b011)); //LUI
 
   assign Operation[1] = (ALUOp == 3'b100) ||  // LW\SW
       ((ALUOp == 3'b000) && (Funct3 == 3'b101)) || // SRLI
@@ -43,10 +44,8 @@ module ALUController (
       ((ALUOp == 3'b010) && (Funct3 == 3'b010)) || //SLT
       ((ALUOp == 3'b010) && (Funct3 == 3'b000) && (Funct7 == 7'b0100000)) || //SUB
       ((ALUOp == 3'b000) && (Funct3 == 3'b101) && (Funct7 == 7'b0000000)) ||  // SLLI
-      ((ALUOp == 3'b000) && (Funct3 == 3'b000));  // ADDI; 
+      ((ALUOp == 3'b000) && (Funct3 == 3'b000)) || //ADDI
+      ((ALUOp == 3'b011));  // LUI 
 
-// always_comb begin
-//     $display("%b", opcode);
-// end
 
 endmodule
