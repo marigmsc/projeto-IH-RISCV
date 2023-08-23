@@ -16,7 +16,7 @@ module alu#(
     
         always_comb // Lógica combinacional da ALU, onde poderiámos adicionar mais instruções R-type
         begin
-                $display("Operation: %b", Operation);
+                // $display("Operation: %b", Operation);
             case(Operation)
             4'b0000:        // AND 
                     ALUResult = SrcA & SrcB;
@@ -38,7 +38,7 @@ module alu#(
                     ALUResult = (SrcA == SrcB) ? 1 : 0;  
             4'b1001:begin  //LUI
                     ALUResult = SrcB;
-                    $display("ALURes = %b", ALUResult);
+                //     $display("ALURes = %b", ALUResult);
             end
             4'b1010:       // SUB
                     ALUResult = SrcA - SrcB; 

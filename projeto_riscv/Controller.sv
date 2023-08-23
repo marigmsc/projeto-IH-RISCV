@@ -32,16 +32,16 @@ module Controller (
   assign JALR = 7'b1100111; // JALR
   
 
-  assign ALUSrc = (Opcode == LW || Opcode == SW || Opcode == SRAI || Opcode == JAL);
+  assign ALUSrc = (Opcode == LW || Opcode == SW || Opcode == SRAI || Opcode == JAL || Opcode == JALR);
   assign MemtoReg = (Opcode == LW);
-  assign RegWrite = (Opcode == R_TYPE || Opcode == LW || Opcode == SRAI || Opcode == JAL);
+  assign RegWrite = (Opcode == R_TYPE || Opcode == LW || Opcode == SRAI || Opcode == JAL || Opcode == JALR);
   assign MemRead = (Opcode == LW);
   assign MemWrite = (Opcode == SW);
-  assign ALUOp[0] = (Opcode == BR || Opcode == JAL);
-  assign ALUOp[1] = (Opcode == R_TYPE || Opcode == JAL);
-  assign ALUOp[2] = (Opcode == LW || Opcode == SW || Opcode == JAL);
+  assign ALUOp[0] = (Opcode == BR || Opcode == JAL || Opcode == JALR);
+  assign ALUOp[1] = (Opcode == R_TYPE || Opcode == JAL || Opcode == JALR);
+  assign ALUOp[2] = (Opcode == LW || Opcode == SW || Opcode == JAL || Opcode == JALR);
   assign Branch = (Opcode == BR);
-  assign Jump = (Opcode == JAL);
+  assign Jump = (Opcode == JAL || Opcode == JALR);
   assign CurrFlag = (Opcode == JALR);
 
 endmodule
