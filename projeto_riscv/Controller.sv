@@ -18,10 +18,11 @@ module Controller (
     output logic [2:0] ALUOp,  //00: LW/SW; 01:Branch; 10: Rtype
     output logic Branch,  //0: branch is not taken; 1: branch is taken
     output logic Jump,
-    output logic CurrFlag
+    output logic CurrFlag,
+    output logic halt
 );
 
-  logic [6:0] R_TYPE, LW, SW, BR, SRAI, JAL, JALR;
+  logic [6:0] R_TYPE, LW, SW, BR, SRAI, JAL, JALR, HALT_I;
 
   assign R_TYPE = 7'b0110011;  //add,and
   assign LW = 7'b0000011;  //lw
@@ -30,6 +31,7 @@ module Controller (
   assign SRAI = 7'b0010011; // SRAI, SLLI,SLTI, ADDI
   assign JAL = 7'b1101111; // JAL
   assign JALR = 7'b1100111; // JALR
+  assign HALT_I = 7'b1000000; // HALT
   
 
   assign ALUSrc = (Opcode == LW || Opcode == SW || Opcode == SRAI || Opcode == JAL || Opcode == JALR);
@@ -43,5 +45,8 @@ module Controller (
   assign Branch = (Opcode == BR);
   assign Jump = (Opcode == JAL || Opcode == JALR);
   assign CurrFlag = (Opcode == JALR);
+  assign halt = (Opcode == HALT_I);
+
+  
 
 endmodule

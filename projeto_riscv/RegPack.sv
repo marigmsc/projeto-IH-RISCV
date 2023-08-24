@@ -12,6 +12,7 @@ package Pipe_Buf_Reg_PKG;
   typedef struct packed {
     logic [8:0]  Curr_Pc;
     logic [31:0] Curr_Instr;
+    logic        halt;
   } if_id_reg;
 
   // Reg B

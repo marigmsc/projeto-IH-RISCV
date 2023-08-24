@@ -20,6 +20,7 @@ module Datapath #(
     Branch,  // Branch Enable
     Jump,
     CurrFlag,
+    halt,
     input  logic [          2:0] ALUOp,
     input  logic [ALU_CC_W -1:0] ALU_CC,         // ALU Control Code ( input of the ALU )
     output logic [          6:0] opcode,
@@ -53,16 +54,28 @@ module Datapath #(
   logic [DATA_W-1:0] FAmux_Result;
   logic [DATA_W-1:0] FBmux_Result;
   logic Reg_Stall;  //1: PC fetch same, Register not update
+  logic [8:0] pcadd_index;
 
   if_id_reg A;
   id_ex_reg B;
   ex_mem_reg C;
   mem_wb_reg D;
 
+  mux2 #(9) pcadd_index_mux (
+    9'b100,
+    9'b0,
+    A.halt,
+    pcadd_index
+  );
+
+always_comb begin
+    $display("halt: %b", A.halt);
+  end
+
   // next PC
   adder #(9) pcadd (
       PC,
-      9'b100,
+      pcadd_index,
       PCPlus4
   );
   mux2 #(9) pcmux (
@@ -95,6 +108,7 @@ module Datapath #(
         begin
       A.Curr_Pc <= PC;
       A.Curr_Instr <= Instr;
+      A.halt <= halt;
     end
   end
 
