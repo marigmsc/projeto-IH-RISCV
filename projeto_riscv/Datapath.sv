@@ -38,8 +38,7 @@ module Datapath #(
     output logic reade,  // read enable
     output logic [DM_ADDRESS-1:0] addr,  // address
     output logic [DATA_W-1:0] wr_data,  // write data
-    output logic [DATA_W-1:0] rd_data,  // read data
-    output logic haltOut
+    output logic [DATA_W-1:0] rd_data  // read data
 );
 
   logic [PC_W-1:0] PC, PCPlus4, Next_PC;
@@ -62,16 +61,10 @@ module Datapath #(
   ex_mem_reg C;
   mem_wb_reg D;
 
-  assign haltOut = B.halt;
-
-  always_comb begin 
-    $display("halt %b", B.halt);
-  end
-
   mux2 #(9) pcadd_index_mux (
     9'b100,
     9'b0,
-    B.halt,
+    halt,
     pcadd_index
   );
 
@@ -81,6 +74,7 @@ module Datapath #(
       pcadd_index,
       PCPlus4
   );
+  
   mux2 #(9) pcmux (
       PCPlus4,
       BrPC[PC_W-1:0],
@@ -138,6 +132,8 @@ module Datapath #(
       Reg2
   );
 
+
+
   assign reg_num = D.rd;
   assign reg_data = WrmuxSrcFinal;
   assign reg_write_sig = D.RegWrite;
@@ -150,7 +146,6 @@ module Datapath #(
 
   // ID_EX_Reg B;
   always @(posedge clk) begin
-    B.halt <= (PC == 000000000 ? 0 : halt);
     if ((reset) || (Reg_Stall) || (PcSel))   // initialization or flush or generate a NOP if hazard
         begin
       B.ALUSrc <= 0;
@@ -182,7 +177,6 @@ module Datapath #(
       B.Branch <= Branch;
       B.Jump <= Jump;
       B.CurrFlag <= CurrFlag;
-      // B.halt <= halt;
       B.Curr_Pc <= A.Curr_Pc;
       B.RD_One <= Reg1;
       B.RD_Two <= Reg2;
@@ -249,7 +243,7 @@ module Datapath #(
       B.Branch,
       B.Jump,
       B.CurrFlag,
-      B.halt,
+      halt,
       B.RD_One,
       ALUResult,      
       BrImm,
@@ -319,7 +313,6 @@ module Datapath #(
       D.RegWrite <= 0;
       D.MemtoReg <= 0;
       D.Jump <= 0;
-      // D.halt <= 0;
       D.Pc_Imm <= 0;
       D.Pc_Four <= 0;
       D.Imm_Out <= 0;
@@ -330,7 +323,6 @@ module Datapath #(
       D.RegWrite <= C.RegWrite;
       D.MemtoReg <= C.MemtoReg;
       D.Jump <= C.Jump;
-      // D.halt <= C.halt;
       D.Pc_Imm <= C.Pc_Imm;
       D.Pc_Four <= C.Pc_Four;
       D.Imm_Out <= C.Imm_Out;

@@ -3,7 +3,7 @@
 module Controller (
     //Input
     input logic [6:0] Opcode,
-    input logic haltIn,
+    // input logic haltIn,
     //7-bit opcode field from the instruction
 
     //Outputs
@@ -19,8 +19,8 @@ module Controller (
     output logic [2:0] ALUOp,  //00: LW/SW; 01:Branch; 10: Rtype
     output logic Branch,  //0: branch is not taken; 1: branch is taken
     output logic Jump,
-    output logic CurrFlag,
-    output logic halt
+    output logic CurrFlag
+    // output logic halt
 );
 
   logic [6:0] R_TYPE, LW, SW, BR, SRAI, JAL, JALR, HALT_I, LUI;
@@ -47,7 +47,7 @@ module Controller (
   assign Branch = (Opcode == BR);
   assign Jump = (Opcode == JAL || Opcode == JALR);
   assign CurrFlag = (Opcode == JALR);
-  assign halt = (Opcode == HALT_I || haltIn);
+  // assign halt = (Opcode == HALT_I || haltIn);
 
 
 endmodule

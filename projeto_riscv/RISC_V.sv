@@ -19,7 +19,7 @@ module riscv #(
 );
 
   logic [6:0] opcode;
-  logic ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, Jump, CurrFlag, halt, haltOut;
+  logic ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, Jump, CurrFlag, halt;
   logic [2:0] ALUop;
   logic [2:0] ALUop_Reg;
   logic [6:0] Funct7;
@@ -28,7 +28,6 @@ module riscv #(
 
   Controller c (
       opcode,
-      haltOut,
       ALUSrc,
       MemtoReg,
       RegWrite,
@@ -37,8 +36,7 @@ module riscv #(
       ALUop,
       Branch,
       Jump,
-      CurrFlag,
-      halt
+      CurrFlag
   );
 
   ALUController ac (
@@ -46,6 +44,12 @@ module riscv #(
       Funct7,
       Funct3,
       Operation
+  );
+
+  Halt hal (
+    clk,
+    opcode,
+    halt
   );
 
   Datapath dp (
@@ -74,8 +78,7 @@ module riscv #(
       rd,
       addr,
       wr_data,
-      rd_data,
-      haltOut
+      rd_data
   );
 
 endmodule
