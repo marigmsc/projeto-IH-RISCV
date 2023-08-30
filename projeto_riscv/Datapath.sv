@@ -68,8 +68,8 @@ module Datapath #(
     pcadd_index
   );
 
-always_comb begin
-    $display("halt: %b", A.halt);
+  always_comb begin 
+    $display("halt %b", A.halt);
   end
 
   // next PC
@@ -108,7 +108,6 @@ always_comb begin
         begin
       A.Curr_Pc <= PC;
       A.Curr_Instr <= Instr;
-      A.halt <= halt;
     end
   end
 
@@ -159,6 +158,7 @@ always_comb begin
       B.Branch <= 0;
       B.Jump <= 0;
       B.CurrFlag <= 0;
+      B.halt <= 0;
       B.Curr_Pc <= 0;
       B.RD_One <= 0;
       B.RD_Two <= 0;
@@ -179,6 +179,7 @@ always_comb begin
       B.Branch <= Branch;
       B.Jump <= Jump;
       B.CurrFlag <= CurrFlag;
+      B.halt <= A.halt;
       B.Curr_Pc <= A.Curr_Pc;
       B.RD_One <= Reg1;
       B.RD_Two <= Reg2;
@@ -244,6 +245,7 @@ always_comb begin
       B.Branch,
       B.Jump,
       B.CurrFlag,
+      B.halt,
       B.RD_One,
       ALUResult,      
       BrImm,
@@ -261,6 +263,7 @@ always_comb begin
       C.MemRead <= 0;
       C.MemWrite <= 0;
       C.Jump <= 0;
+      C.halt <= 0;
       C.Pc_Imm <= 0;
       C.Pc_Four <= 0;
       C.Imm_Out <= 0;
@@ -275,6 +278,7 @@ always_comb begin
       C.MemRead <= B.MemRead;
       C.MemWrite <= B.MemWrite;
       C.Jump <= B.Jump;
+      C.halt <= B.halt;
       C.Pc_Imm <= BrImm;
       C.Pc_Four <= Old_PC_Four;
       C.Imm_Out <= B.ImmG;
@@ -311,6 +315,7 @@ always_comb begin
       D.RegWrite <= 0;
       D.MemtoReg <= 0;
       D.Jump <= 0;
+      D.halt <= 0;
       D.Pc_Imm <= 0;
       D.Pc_Four <= 0;
       D.Imm_Out <= 0;
@@ -321,6 +326,7 @@ always_comb begin
       D.RegWrite <= C.RegWrite;
       D.MemtoReg <= C.MemtoReg;
       D.Jump <= C.Jump;
+      D.halt <= C.halt;
       D.Pc_Imm <= C.Pc_Imm;
       D.Pc_Four <= C.Pc_Four;
       D.Imm_Out <= C.Imm_Out;

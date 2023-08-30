@@ -36,10 +36,8 @@ module alu#(
                     ALUResult = SrcA >>> SrcB; 
             4'b1000:        // EQUAL
                     ALUResult = (SrcA == SrcB) ? 1 : 0;  
-            4'b1001:begin  //LUI
+            4'b1001:        //LUI
                     ALUResult = SrcB;
-                //     $display("ALURes = %b", ALUResult);
-            end
             4'b1010:       // SUB
                     ALUResult = SrcA - SrcB; 
             4'b1011:        // ADDI

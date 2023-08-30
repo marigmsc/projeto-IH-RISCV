@@ -1,2 +1,4 @@
-xor x3,x3,x3
-lw x2,1(x0)
+addi x1,x0,8
+sub x6,x6,x1
+and x7,x6,x1
+lui x6,3

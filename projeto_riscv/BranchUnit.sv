@@ -8,6 +8,7 @@ module BranchUnit #(
     input logic Branch, //sinal de controle. 1 = branch em execução
     input logic Jump,
     input logic CurrFlag,
+    input logic halt,
     input logic [31:0] Reg2,
     input logic [31:0] AluResult,// Resultado da operação lógica aritmética da ALU
     output logic [31:0] PC_Imm, // Novo valor de PC caso a condição da branch seja válida depois do ImmGen
@@ -22,7 +23,7 @@ module BranchUnit #(
   assign PC_Full = {23'b0, Cur_PC};
 
   assign PC_Imm = (CurrFlag ? Reg2 + Imm : PC_Full + Imm);
-  assign PC_Four = PC_Full + 32'b100;
+  assign PC_Four = (halt ? 32'b0 : PC_Full + 32'b100);
   assign Branch_Sel = (Branch && AluResult[0]) || Jump;  // 0:Branch is taken; 1:Branch is not taken
 
   assign BrPC = (Branch_Sel) ? PC_Imm : 32'b0;  // Branch -> PC+Imm   // Otherwise, BrPC value is not important

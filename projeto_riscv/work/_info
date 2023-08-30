@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1692755211
+Z2 !s110 1693353643
 !i10b 1
 !s100 QIac6HObCMm5X?]1FgE4l1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1692755210.000000
+Z7 !s108 1693353643.000000
 !s107 tb_top.sv|RISC_V.sv|Datapath.sv|instructionmemory.sv|datamemory.sv|mux4.sv|mux2.sv|imm_Gen.sv|HazardDetection.sv|ForwardingUnit.sv|flopr.sv|Controller.sv|BranchUnit.sv|ALUController.sv|alu.sv|RegFile.sv|RegPack.sv|Memoria32Data.sv|Memoria32.sv|ramOnChipData.v|ramOnChip32.v|adder.sv|
 Z8 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -37,17 +37,17 @@ valu
 R1
 R2
 !i10b 1
-!s100 fd0:4IMUWM;EGWQCXhXmd0
+!s100 z]n0gia7EodG45UST?K]E2
 R3
-IPCDO[5>N5HaFOkH2HhWzC1
+IdfU>d2^QD1a2>4VePZhGM1
 R4
 S1
 R0
-w1692750282
+w1693348765
 8alu.sv
 Falu.sv
 !i122 0
-L0 3 58
+L0 3 56
 R6
 r1
 !s85 0
@@ -86,17 +86,17 @@ vBranchUnit
 R1
 R2
 !i10b 1
-!s100 1XASPMRCXSAMmNdUEnB3d3
+!s100 XhS<P;mjSLg`=ISAKFWK_1
 R3
-Ige@n3LLEBN7Z5Dii9V:G11
+I=jfbRaQ:8dFTnYiE8Sm7M2
 R4
 S1
 R0
-w1692750134
+w1693353469
 8BranchUnit.sv
 FBranchUnit.sv
 !i122 0
-L0 3 31
+L0 3 32
 R6
 r1
 !s85 0
@@ -158,23 +158,23 @@ R8
 R9
 vDatapath
 R1
-Z11 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 zToBh@I@hLW=oj9zA4N8V0
-DXx4 work 16 Datapath_sv_unit 0 22 J7nRbITU@RS6zM5YU<c@E3
+Z11 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 B6l5K:M`flcBakS_F`SNT3
+DXx4 work 16 Datapath_sv_unit 0 22 cS`@F@gFdonR1S;jibJCC0
 R2
 R4
 r1
 !s85 0
 !i10b 1
-!s100 @K04N@jBPLOF<JDikJ_=>2
-IS<od;Hd`cdf5`jSIh`YfF2
+!s100 J1h:1nRN1WY_Ym>Loc]iC1
+InF_=8aHa7<ii_0C1MNLLf1
 !s105 Datapath_sv_unit
 S1
 R0
-Z12 w1692755210
+Z12 w1693353583
 Z13 8Datapath.sv
 Z14 FDatapath.sv
 !i122 0
-L0 5 349
+L0 5 355
 R6
 31
 R7
@@ -187,12 +187,12 @@ XDatapath_sv_unit
 R1
 R11
 R2
-VJ7nRbITU@RS6zM5YU<c@E3
+VcS`@F@gFdonR1S;jibJCC0
 r1
 !s85 0
 !i10b 1
-!s100 dVF0A^7?Q3[kH4_<o_lkf0
-IJ7nRbITU@RS6zM5YU<c@E3
+!s100 Ez^G5]VQ[EnhgeIkg^KjA0
+IcS`@F@gFdonR1S;jibJCC0
 !i103 1
 S1
 R0
@@ -434,13 +434,13 @@ XPipe_Buf_Reg_PKG
 R1
 R2
 !i10b 1
-!s100 36:415bZB2iMZh4YFWX_K3
+!s100 G@W1@P`S3WdPGa=9Hle771
 R3
-IzToBh@I@hLW=oj9zA4N8V0
-VzToBh@I@hLW=oj9zA4N8V0
+IB6l5K:M`flcBakS_F`SNT3
+VB6l5K:M`flcBakS_F`SNT3
 S1
 R0
-w1692753701
+w1693351240
 8RegPack.sv
 FRegPack.sv
 !i122 0
@@ -536,7 +536,7 @@ IZAjgHKAaQKo82^RM<ca5]1
 R4
 S1
 R0
-w1692753340
+w1693350948
 8RISC_V.sv
 FRISC_V.sv
 !i122 0
