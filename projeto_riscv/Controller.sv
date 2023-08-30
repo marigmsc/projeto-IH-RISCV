@@ -3,6 +3,7 @@
 module Controller (
     //Input
     input logic [6:0] Opcode,
+    input logic haltIn,
     //7-bit opcode field from the instruction
 
     //Outputs
@@ -45,8 +46,7 @@ module Controller (
   assign Branch = (Opcode == BR);
   assign Jump = (Opcode == JAL || Opcode == JALR);
   assign CurrFlag = (Opcode == JALR);
-  assign halt = (Opcode == HALT_I);
+  assign halt = (Opcode == HALT_I || haltIn);
 
-  
 
 endmodule

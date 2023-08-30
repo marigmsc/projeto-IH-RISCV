@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/foxwo/OneDrive/Documentos/GitHub/projeto-IH-RISCV/projeto_riscv
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1693353643
+Z2 !s110 1693358092
 !i10b 1
 !s100 QIac6HObCMm5X?]1FgE4l1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1693353643.000000
+Z7 !s108 1693358092.000000
 !s107 tb_top.sv|RISC_V.sv|Datapath.sv|instructionmemory.sv|datamemory.sv|mux4.sv|mux2.sv|imm_Gen.sv|HazardDetection.sv|ForwardingUnit.sv|flopr.sv|Controller.sv|BranchUnit.sv|ALUController.sv|alu.sv|RegFile.sv|RegPack.sv|Memoria32Data.sv|Memoria32.sv|ramOnChipData.v|ramOnChip32.v|adder.sv|
 Z8 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -111,13 +111,13 @@ vController
 R1
 R2
 !i10b 1
-!s100 @T_9Z8e3hhfH1clTZ`N:`0
+!s100 h;3`BL;i907:7I;5AF;]a3
 R3
-IFIBVJXM4BhbLPRb84YKQN3
+IVzOJGf4?AT=G07HBjQSP00
 R4
 S1
 R0
-w1692752320
+w1693358090
 8Controller.sv
 FController.sv
 !i122 0
@@ -159,22 +159,22 @@ R9
 vDatapath
 R1
 Z11 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 B6l5K:M`flcBakS_F`SNT3
-DXx4 work 16 Datapath_sv_unit 0 22 cS`@F@gFdonR1S;jibJCC0
+DXx4 work 16 Datapath_sv_unit 0 22 S4I>FndUW>gB<Q=o;00>X0
 R2
 R4
 r1
 !s85 0
 !i10b 1
-!s100 J1h:1nRN1WY_Ym>Loc]iC1
-InF_=8aHa7<ii_0C1MNLLf1
+!s100 Mm;Q]UYFAPSK9;JKO<0FC2
+IOhE@A[2^7i9^6_9BbMkzS3
 !s105 Datapath_sv_unit
 S1
 R0
-Z12 w1693353583
+Z12 w1693357844
 Z13 8Datapath.sv
 Z14 FDatapath.sv
 !i122 0
-L0 5 355
+L0 5 359
 R6
 31
 R7
@@ -187,12 +187,12 @@ XDatapath_sv_unit
 R1
 R11
 R2
-VcS`@F@gFdonR1S;jibJCC0
+VS4I>FndUW>gB<Q=o;00>X0
 r1
 !s85 0
 !i10b 1
-!s100 Ez^G5]VQ[EnhgeIkg^KjA0
-IcS`@F@gFdonR1S;jibJCC0
+!s100 R=kCKKlANX^5=]P]9jH_m2
+IS4I>FndUW>gB<Q=o;00>X0
 !i103 1
 S1
 R0
@@ -287,17 +287,17 @@ vimm_Gen
 R1
 R2
 !i10b 1
-!s100 C;`=FUO_U`EeOOGh`ZJk13
+!s100 FKFcObgPJAOJH@ScH:0XF0
 R3
-I5V:2QiMYR^1LJXIS0a?0Q2
+I`hNmg4?c[Yz40aeTRhWD[1
 R4
 S1
 R0
-w1692750101
+w1693357996
 8imm_Gen.sv
 Fimm_Gen.sv
 !i122 0
-L0 3 54
+L0 3 60
 R6
 r1
 !s85 0
@@ -530,17 +530,17 @@ vriscv
 R1
 R2
 !i10b 1
-!s100 JA;2R[=>AgSR4^1BNU@IH3
+!s100 mS5WQ:]Ta8VPdZ39^di5B0
 R3
-IZAjgHKAaQKo82^RM<ca5]1
+IHQiMTkE7S`JY5_GgJ<AFi2
 R4
 S1
 R0
-w1693350948
+w1693356855
 8RISC_V.sv
 FRISC_V.sv
 !i122 0
-L0 3 77
+L0 3 79
 R6
 r1
 !s85 0

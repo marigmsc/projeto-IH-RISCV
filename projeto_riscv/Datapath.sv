@@ -38,7 +38,8 @@ module Datapath #(
     output logic reade,  // read enable
     output logic [DM_ADDRESS-1:0] addr,  // address
     output logic [DATA_W-1:0] wr_data,  // write data
-    output logic [DATA_W-1:0] rd_data  // read data
+    output logic [DATA_W-1:0] rd_data,  // read data
+    output logic haltOut
 );
 
   logic [PC_W-1:0] PC, PCPlus4, Next_PC;
@@ -55,22 +56,24 @@ module Datapath #(
   logic [DATA_W-1:0] FBmux_Result;
   logic Reg_Stall;  //1: PC fetch same, Register not update
   logic [8:0] pcadd_index;
-
+  
   if_id_reg A;
   id_ex_reg B;
   ex_mem_reg C;
   mem_wb_reg D;
 
+  assign haltOut = B.halt;
+
+  always_comb begin 
+    $display("halt %b", B.halt);
+  end
+
   mux2 #(9) pcadd_index_mux (
     9'b100,
     9'b0,
-    A.halt,
+    B.halt,
     pcadd_index
   );
-
-  always_comb begin 
-    $display("halt %b", A.halt);
-  end
 
   // next PC
   adder #(9) pcadd (
@@ -147,6 +150,7 @@ module Datapath #(
 
   // ID_EX_Reg B;
   always @(posedge clk) begin
+    B.halt <= (PC == 000000000 ? 0 : halt);
     if ((reset) || (Reg_Stall) || (PcSel))   // initialization or flush or generate a NOP if hazard
         begin
       B.ALUSrc <= 0;
@@ -158,7 +162,6 @@ module Datapath #(
       B.Branch <= 0;
       B.Jump <= 0;
       B.CurrFlag <= 0;
-      B.halt <= 0;
       B.Curr_Pc <= 0;
       B.RD_One <= 0;
       B.RD_Two <= 0;
@@ -179,7 +182,7 @@ module Datapath #(
       B.Branch <= Branch;
       B.Jump <= Jump;
       B.CurrFlag <= CurrFlag;
-      B.halt <= A.halt;
+      // B.halt <= halt;
       B.Curr_Pc <= A.Curr_Pc;
       B.RD_One <= Reg1;
       B.RD_Two <= Reg2;
@@ -193,6 +196,7 @@ module Datapath #(
 
     end
   end
+
 
   //--// The Forwarding Unit
   ForwardingUnit forunit (
@@ -263,7 +267,7 @@ module Datapath #(
       C.MemRead <= 0;
       C.MemWrite <= 0;
       C.Jump <= 0;
-      C.halt <= 0;
+      // C.halt <= 0;
       C.Pc_Imm <= 0;
       C.Pc_Four <= 0;
       C.Imm_Out <= 0;
@@ -278,7 +282,7 @@ module Datapath #(
       C.MemRead <= B.MemRead;
       C.MemWrite <= B.MemWrite;
       C.Jump <= B.Jump;
-      C.halt <= B.halt;
+      // C.halt <= B.halt;
       C.Pc_Imm <= BrImm;
       C.Pc_Four <= Old_PC_Four;
       C.Imm_Out <= B.ImmG;
@@ -315,7 +319,7 @@ module Datapath #(
       D.RegWrite <= 0;
       D.MemtoReg <= 0;
       D.Jump <= 0;
-      D.halt <= 0;
+      // D.halt <= 0;
       D.Pc_Imm <= 0;
       D.Pc_Four <= 0;
       D.Imm_Out <= 0;
@@ -326,7 +330,7 @@ module Datapath #(
       D.RegWrite <= C.RegWrite;
       D.MemtoReg <= C.MemtoReg;
       D.Jump <= C.Jump;
-      D.halt <= C.halt;
+      // D.halt <= C.halt;
       D.Pc_Imm <= C.Pc_Imm;
       D.Pc_Four <= C.Pc_Four;
       D.Imm_Out <= C.Imm_Out;

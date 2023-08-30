@@ -48,6 +48,12 @@ module imm_Gen (
 
         7'b1100111:
           Imm_out = {inst_code[31] ? 20'hFFFFF : 20'b0, inst_code[31:20]};
+        
+        7'b0110111:begin		//LUI 
+					Imm_out = {inst_code[31:12],12'b0};
+          $display("ImmOut = %b", Imm_out);
+
+        end
 
       default: Imm_out = {32'b0};
 
